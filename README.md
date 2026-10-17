@@ -18,7 +18,46 @@
 
 [下载 v0.1.0 安装包](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.1.0/china-five-year-plan-skill-v0.1.0.zip) · [查看版本](https://github.com/xingyou1439/china-five-year-plan-skill/releases)
 
-在支持 Agent Skills 的宿主中安装整个 `china-five-year-plan-skill` 文件夹，保留 `SKILL.md`、`references/`、`scripts/` 的相对位置。安装后可显式请求：
+### WorkBuddy
+
+复制到 WorkBuddy 对话框，下载安装包：
+
+```text
+请下载这个 Skill 安装包到本机，告诉我保存位置，保留 ZIP 不解压：
+https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.1.0/china-five-year-plan-skill-v0.1.0.zip
+```
+
+然后点击 **专家·技能·连接器 → 技能 → 添加技能 → 上传技能**，选择下载的 ZIP。也可直接点击上方下载链接。[WorkBuddy 官方说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)：自定义包需上传导入，对话一键安装目前仅适用于技能市场中的技能。
+
+### Codex
+
+复制到本机 Codex 对话框：
+
+```text
+$skill-installer 请安装 GitHub 仓库 https://github.com/xingyou1439/china-five-year-plan-skill
+版本 ref：v0.1.0；仓库内路径：.；安装名称：china-five-year-plan-skill。
+请安装完整目录，检查 SKILL.md 和 references/ 是否齐全；如已存在，请先检查，不要覆盖。
+```
+
+安装后开启新对话；未识别时重启 Codex。见 [Codex 官方说明](https://learn.chatgpt.com/docs/build-skills)。
+
+### Claude Code
+
+复制到本机 Claude Code 对话框：
+
+```text
+请将 https://github.com/xingyou1439/china-five-year-plan-skill 的 v0.1.0 版本完整安装到
+~/.claude/skills/china-five-year-plan-skill，保留所有文件的相对位置。
+如目标目录已存在，请先检查，不要覆盖。完成后检查 SKILL.md 和 references/ 是否齐全。
+```
+
+安装后输入 `/china-five-year-plan-skill` 调用。个人技能目录见 [Claude Code 官方说明](https://code.claude.com/docs/en/skills#choose-where-skills-load)。
+
+以上为按官方机制编写的安装指令，尚未完成三个客户端逐一实测。安装时应保留完整文件夹，不能只复制 `SKILL.md`。
+
+### 安装后怎么用
+
+复制以下问题，替换为自己的情况（Claude Code 也可用 `/china-five-year-plan-skill` 开头）：
 
 ```text
 使用 $china-five-year-plan-skill，判断我给本地制造企业做 AI 服务的想法，
@@ -29,8 +68,6 @@
 Use $china-five-year-plan-skill to explain China's priorities for eldercare
 and what an overseas technology supplier should verify before market entry.
 ```
-
-Codex 的本地技能目录和安装方式以[官方 Skills 文档](https://learn.chatgpt.com/docs/build-skills)为准。可将完整文件夹放入 `~/.agents/skills/`，或在 Codex 中让 `$skill-installer` 安装已发布的仓库。其他宿主的安装方式应按其文档核实；本包尚未声称通过全部宿主实测。
 
 普通聊天用户也可以提供资料和 `SKILL.md`，要求按该流程分析，但这不等同宿主已安装 Skill。
 

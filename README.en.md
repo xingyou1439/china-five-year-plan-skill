@@ -18,7 +18,46 @@ The Skill separates policy alignment, demand, capability, timing and current acc
 
 [Download v0.1.0](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.1.0/china-five-year-plan-skill-v0.1.0.zip) · [Releases](https://github.com/xingyou1439/china-five-year-plan-skill/releases)
 
-Install the complete `china-five-year-plan-skill` folder in an Agent Skills-compatible host, preserving relative file paths. For Codex, consult the [official Skills documentation](https://learn.chatgpt.com/docs/build-skills); local skills can be placed under `~/.agents/skills/`. This package does not claim to have been tested on every host.
+### WorkBuddy
+
+Paste into the WorkBuddy chat to download the package:
+
+```text
+Download this Skill ZIP to my computer and tell me where it was saved. Keep it zipped:
+https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.1.0/china-five-year-plan-skill-v0.1.0.zip
+```
+
+Then open **Experts · Skills · Connectors → Skills → Add Skill → Upload Skill** and select the ZIP. You can also use the download link above. [WorkBuddy's official guide](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) requires custom packages to be imported through Upload Skill; chat installation currently covers marketplace skills only.
+
+### Codex
+
+Paste into your local Codex chat:
+
+```text
+$skill-installer Install https://github.com/xingyou1439/china-five-year-plan-skill
+Ref: v0.1.0; path within the repository: .; install name: china-five-year-plan-skill.
+Install the complete folder and check that SKILL.md and references/ are present. Inspect any existing installation before proceeding; do not overwrite it.
+```
+
+Start a new conversation after installation; restart Codex if the Skill is not detected. See the [official Codex guide](https://learn.chatgpt.com/docs/build-skills).
+
+### Claude Code
+
+Paste into your local Claude Code chat:
+
+```text
+Install the complete v0.1.0 version of https://github.com/xingyou1439/china-five-year-plan-skill
+into ~/.claude/skills/china-five-year-plan-skill, preserving relative file paths.
+Inspect an existing destination before proceeding; do not overwrite it. Check that SKILL.md and references/ are present.
+```
+
+Invoke it with `/china-five-year-plan-skill`. See [Claude Code's official personal skill locations](https://code.claude.com/docs/en/skills#choose-where-skills-load).
+
+These prompts follow documented installation mechanisms; they have not been tested end to end in all three clients. Keep the complete folder, including its references and scripts, rather than copying only `SKILL.md`.
+
+### After installation
+
+Paste a question like these, replacing the scenario with your own. In Claude Code, you can start with `/china-five-year-plan-skill` instead.
 
 ```text
 Use $china-five-year-plan-skill to explain investment in people in China,
