@@ -1,0 +1,4 @@
+interface:
+  display_name: "中国十五五决策参考 | China Five-Year Plan"
+  short_description: "用规划原文和跨期对照分析国内决策、了解中国与进入中国市场的机会和约束"
+  default_prompt: "Use $china-five-year-plan-skill to assess my decision against China’s Five-Year Plans, with cited evidence and practical next steps."

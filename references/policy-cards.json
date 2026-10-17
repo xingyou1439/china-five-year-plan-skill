@@ -1,0 +1,766 @@
+{
+  "version": "0.1.0",
+  "cards": [
+    {
+      "id": "P01",
+      "title_zh": "规划如何落地",
+      "title_en": "How plans become implementation",
+      "keywords": [
+        "规划",
+        "落地",
+        "预算",
+        "project",
+        "implementation",
+        "budget",
+        "planning"
+      ],
+      "policy_fact": "纲要要求规划、年度计划与具体落实衔接。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 80,
+          "quote_zh": "年度计划要滚动落实规划各项任务"
+        }
+      ],
+      "interpretation": {
+        "domestic": "先找年度安排、责任主体、项目和采购，不直接从方向推收入。",
+        "inbound": "定位国家、行业、地方与年度执行文件。",
+        "must_verify": "预算、招标、执行进度及客户采购是否真实存在。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P02",
+      "title_zh": "预期性与约束性任务",
+      "title_en": "Indicative and binding tasks",
+      "keywords": [
+        "指标",
+        "目标",
+        "预期性",
+        "约束性",
+        "target",
+        "binding",
+        "indicative"
+      ],
+      "policy_fact": "纲要区分任务落实机制。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 80,
+          "quote_zh": "对预期性指标和产业发展、结构调整等任务，通过创造良好政策环境、体制环境和法治环境推进落实"
+        }
+      ],
+      "interpretation": {
+        "domestic": "核查目标性质，不能把行业目标当作个人承诺。",
+        "inbound": "Explain implementation responsibility without inventing firm-level obligations.",
+        "must_verify": "逐项指标分类、实施工具；具体法律义务另查现行规则。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P03",
+      "title_zh": "传统产业升级与竞争治理",
+      "title_en": "Traditional-industry upgrading",
+      "keywords": [
+        "制造",
+        "改造",
+        "内卷",
+        "manufacturing",
+        "quality",
+        "competition"
+      ],
+      "policy_fact": "传统行业升级与标准、质量和产能治理并行。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 9,
+          "quote_zh": "发展智能制造、绿色制造、服务型制造"
+        }
+      ],
+      "interpretation": {
+        "domestic": "寻找改造、检测、节能和维护任务；避免只追新概念。",
+        "inbound": "Assess supplier/service roles and substitution pressure together.",
+        "must_verify": "客户改造预算、资质、节能/效率收益与回款。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P04",
+      "title_zh": "新兴产业看场景与规模化",
+      "title_en": "Emerging industries and deployment",
+      "keywords": [
+        "新兴产业",
+        "机器人",
+        "新材料",
+        "emerging",
+        "robotics",
+        "aerospace"
+      ],
+      "policy_fact": "新兴产业发展包含场景培育和应用示范。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 10,
+          "quote_zh": "实施新技术新产品新场景大规模应用示范行动"
+        }
+      ],
+      "interpretation": {
+        "domestic": "从已有场景与供应链位置找切入点。",
+        "inbound": "Identify specific deployment partners and customer segments.",
+        "must_verify": "示范项目是否落地、技术成熟度、真实采购与本地条件。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P05",
+      "title_zh": "未来产业看长期不确定性",
+      "title_en": "Future industries and readiness",
+      "keywords": [
+        "未来产业",
+        "量子",
+        "核聚变",
+        "脑机",
+        "具身",
+        "6G",
+        "future",
+        "quantum",
+        "fusion",
+        "embodied"
+      ],
+      "policy_fact": "未来产业仍需探索技术、场景、商业模式和规则。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 11,
+          "quote_zh": "探索多元技术路线、典型应用场景、可行商业模式、市场监管规则"
+        }
+      ],
+      "interpretation": {
+        "domestic": "区别科研、产业配套与短期现金流项目。",
+        "inbound": "Do not infer commercial readiness or current access from priority status.",
+        "must_verify": "技术路线、验证阶段、资本与时间承受力。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P06",
+      "title_zh": "生产性服务业支持产业升级",
+      "title_en": "Producer services",
+      "keywords": [
+        "生产性服务",
+        "检验",
+        "设计",
+        "咨询",
+        "professional services",
+        "testing",
+        "design",
+        "B2B"
+      ],
+      "policy_fact": "生产性服务强调产业融合和专业化。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 13,
+          "quote_zh": "提高现代服务业与先进制造业、现代农业融合发展水平"
+        }
+      ],
+      "interpretation": {
+        "domestic": "核查设计、知识产权、检测、数智化等具体客户任务。",
+        "inbound": "Research specialised B2B partnerships rather than assume a generic China opportunity.",
+        "must_verify": "行业客户、认证互认、交付能力和采购流程。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P07",
+      "title_zh": "AI 应用与中小企业赋能",
+      "title_en": "AI applications and SME services",
+      "keywords": [
+        "人工智能",
+        "AI",
+        "agent",
+        "SME",
+        "中小企业",
+        "数字化",
+        "软件",
+        "SaaS"
+      ],
+      "policy_fact": "纲要提出人工智能应用及中小企业数智赋能。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 26,
+          "quote_zh": "健全中小企业数智赋能服务体系"
+        }
+      ],
+      "interpretation": {
+        "domestic": "优先验证行业流程、数据质量和可付费的效率改进。",
+        "inbound": "Assess localisation, data handling, deployment and local partners.",
+        "must_verify": "客户痛点、数据授权、部署成本、付费与留存；现行规则另核。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P08",
+      "title_zh": "数据供给与合规利用",
+      "title_en": "Data supply and responsible use",
+      "keywords": [
+        "数据",
+        "语料",
+        "dataset",
+        "data",
+        "privacy"
+      ],
+      "policy_fact": "数据开发利用与责任、合规同时出现。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 26,
+          "quote_zh": "健全公共数据资源开发利用责任制和个人数据合规利用机制"
+        }
+      ],
+      "interpretation": {
+        "domestic": "不要把政策鼓励数据开发当成任意采集授权。",
+        "inbound": "Examine authorised data access and applicable cross-border requirements.",
+        "must_verify": "数据来源、授权、质量、用途与现行适用规则。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P09",
+      "title_zh": "AI 发展与治理并行",
+      "title_en": "AI governance",
+      "keywords": [
+        "监管",
+        "安全",
+        "算法",
+        "regulation",
+        "governance",
+        "AI safety"
+      ],
+      "policy_fact": "纲要同时部署 AI 创新与治理。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 28,
+          "quote_zh": "健全算法备案、透明度管理、安全评估等制度"
+        }
+      ],
+      "interpretation": {
+        "domestic": "将治理与质量作为产品设计条件。",
+        "inbound": "Distinguish policy intent from the specific current regulatory regime.",
+        "must_verify": "产品类型、部署、用户、地区与现行备案/评估规则的适用性。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P10",
+      "title_zh": "消费目标与实际支付",
+      "title_en": "Consumption and ability to pay",
+      "keywords": [
+        "消费",
+        "服务消费",
+        "demand",
+        "consumption",
+        "consumer"
+      ],
+      "policy_fact": "提振消费涉及能力、意愿与优质供给。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 28,
+          "quote_zh": "增强居民消费能力，改善消费意愿"
+        }
+      ],
+      "interpretation": {
+        "domestic": "分清使用者、购买者、付款方和复购条件。",
+        "inbound": "Validate segment-level purchasing power rather than extrapolate national ambition.",
+        "must_verify": "定价、频次、渠道、支付能力和竞争。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P11",
+      "title_zh": "投资于人与有效投资",
+      "title_en": "Investment in people",
+      "keywords": [
+        "投资于人",
+        "培训",
+        "人力资本",
+        "human capital",
+        "investment in people"
+      ],
+      "policy_fact": "投资于人涉及民生、能力与设施，且要避免低效投资。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 30,
+          "quote_zh": "加强人力资源开发和人的全面发展投资"
+        }
+      ],
+      "interpretation": {
+        "domestic": "职业学习要结合任务与证据；公共投入不是个人补贴保证。",
+        "inbound": "Identify concrete public-service or capability needs and procurement conditions.",
+        "must_verify": "具体项目、资金文件、培训/服务需求与资格条件。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P12",
+      "title_zh": "全国统一大市场",
+      "title_en": "Unified national market",
+      "keywords": [
+        "统一大市场",
+        "物流",
+        "贸易壁垒",
+        "unified market",
+        "logistics",
+        "barrier"
+      ],
+      "policy_fact": "纲要提出破除保护和分割。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 30,
+          "quote_zh": "破除地方保护和市场分割"
+        }
+      ],
+      "interpretation": {
+        "domestic": "检查业务是否依赖地方保护和特殊补贴。",
+        "inbound": "Account for actual local execution, standards and distribution costs.",
+        "must_verify": "规则执行、互认、物流、当地采购和进入条件。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P13",
+      "title_zh": "民营经济与中小企业",
+      "title_en": "Private enterprise and SMEs",
+      "keywords": [
+        "民营",
+        "创业",
+        "中小企业",
+        "private enterprise",
+        "entrepreneurship"
+      ],
+      "policy_fact": "支持经营主体发展并涉及基础设施公平开放。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 32,
+          "quote_zh": "支持中小企业和个体工商户发展"
+        }
+      ],
+      "interpretation": {
+        "domestic": "从实际可申请政策和真实客户开始。",
+        "inbound": "Do not equate domestic private-enterprise provisions with foreign-entity eligibility.",
+        "must_verify": "适用主体、地区、项目和申请资格，不假定人人可获资助。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P14",
+      "title_zh": "服务业开放与试点",
+      "title_en": "Services opening and pilots",
+      "keywords": [
+        "外资",
+        "进入中国",
+        "准入",
+        "foreign",
+        "market entry",
+        "pilot",
+        "services opening",
+        "hospital"
+      ],
+      "policy_fact": "纲要提出有序开放和试点安排。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 35,
+          "quote_zh": "稳妥实施增值电信、生物技术、外商独资医院等开放试点"
+        }
+      ],
+      "interpretation": {
+        "domestic": "理解国内竞争和合作变化。",
+        "inbound": "Compare entry models; pilot language does not establish nationwide permission.",
+        "must_verify": "当期负面清单、行业规则、试点地区、主体资质和经营许可。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P15",
+      "title_zh": "吸引外资与本地协作",
+      "title_en": "Attracting foreign investment",
+      "keywords": [
+        "FDI",
+        "foreign investment",
+        "R&D",
+        "研发中心",
+        "外商"
+      ],
+      "policy_fact": "吸引外资包含先进制造、现代服务、高新技术及配套协作。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 37,
+          "quote_zh": "支持参与产业链上下游配套协作"
+        }
+      ],
+      "interpretation": {
+        "domestic": "研究与外资企业的配套、交付合作。",
+        "inbound": "Evaluate an identifiable role in a local value chain, customer and partner fit.",
+        "must_verify": "客户、投资主体、准入与经营条件，以及本地配套。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P16",
+      "title_zh": "县域经济与冷链流通",
+      "title_en": "County economies and cold chains",
+      "keywords": [
+        "县域",
+        "农业",
+        "冷链",
+        "乡村",
+        "agriculture",
+        "rural",
+        "cold chain"
+      ],
+      "policy_fact": "县域产业包含加工、流通与特色产业。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 40,
+          "quote_zh": "健全仓储保鲜和冷链物流体系"
+        }
+      ],
+      "interpretation": {
+        "domestic": "研究实际供需、物流损耗、运营与联农带农条件。",
+        "inbound": "Compare specific local supply chains rather than national averages.",
+        "must_verify": "品类、季节、冷链成本、经营条件和付款方。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P17",
+      "title_zh": "因地制宜与区域差异",
+      "title_en": "Regional differences",
+      "keywords": [
+        "区域",
+        "地区",
+        "城市",
+        "regional",
+        "location",
+        "city"
+      ],
+      "policy_fact": "区域布局应结合区域战略、资源和功能。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 42,
+          "quote_zh": "发挥重点区域增长极作用"
+        }
+      ],
+      "interpretation": {
+        "domestic": "选择与技能、客户和成本匹配的城市。",
+        "inbound": "Compare target clusters, partners and local execution before choosing a location.",
+        "must_verify": "产业集群、客户密度、成本、政策执行和人才。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P18",
+      "title_zh": "城市更新与存量运营",
+      "title_en": "Urban renewal",
+      "keywords": [
+        "城市更新",
+        "适老化改造",
+        "urban renewal",
+        "renovation",
+        "community"
+      ],
+      "policy_fact": "更新涉及社区、设施、运营投融资和安全。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 45,
+          "quote_zh": "高质量推进城市更新"
+        }
+      ],
+      "interpretation": {
+        "domestic": "区分维护运营、适老化服务与新增开发。",
+        "inbound": "Identify project owners, payers, standards and partners.",
+        "must_verify": "产权、采购、居民支付、资质和回收周期。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P19",
+      "title_zh": "文化发展与有序经营",
+      "title_en": "Culture and tourism",
+      "keywords": [
+        "文化",
+        "文旅",
+        "短视频",
+        "游戏",
+        "culture",
+        "tourism",
+        "gaming"
+      ],
+      "policy_fact": "文化数智化和健康发展要求并行。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 50,
+          "quote_zh": "引导规范网络文学、网络游戏、网络视听等健康发展"
+        }
+      ],
+      "interpretation": {
+        "domestic": "研究内容质量、渠道、权利与经营条件。",
+        "inbound": "Current access for a foreign cultural/gaming activity must be verified separately.",
+        "must_verify": "版权、用户需求、分发、适用许可和内容要求。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P20",
+      "title_zh": "中国内容出海",
+      "title_en": "Chinese content going global",
+      "keywords": [
+        "出海",
+        "出口",
+        "游戏出海",
+        "outbound",
+        "export",
+        "games"
+      ],
+      "policy_fact": "文本鼓励优质文化内容走出去。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 50,
+          "quote_zh": "推动优质网络文学、网络游戏、影视动漫、精品展览等出海"
+        }
+      ],
+      "interpretation": {
+        "domestic": "研究本地化、渠道和海外用户需求。",
+        "inbound": "Potential cooperation with Chinese exporters is distinct from entering China.",
+        "must_verify": "流向、主体、目标市场、版权和渠道，不倒推境内准入。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P21",
+      "title_zh": "健康服务的需求与边界",
+      "title_en": "Health services",
+      "keywords": [
+        "健康",
+        "医疗",
+        "health",
+        "healthcare",
+        "medical"
+      ],
+      "policy_fact": "健康优先覆盖预防、健康服务和公共卫生。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 54,
+          "quote_zh": "推动从以治病为中心向以健康为中心转变"
+        }
+      ],
+      "interpretation": {
+        "domestic": "需求判断与服务资格、医学证据分开。",
+        "inbound": "Separate general wellness products, regulated care and specific entry models.",
+        "must_verify": "付费需求、专业资质、临床/健康主张证据和现行规则。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P22",
+      "title_zh": "养老与银发经济",
+      "title_en": "Ageing and the silver economy",
+      "keywords": [
+        "养老",
+        "银发",
+        "护理",
+        "ageing",
+        "aging",
+        "eldercare",
+        "silver economy"
+      ],
+      "policy_fact": "养老服务涉及社区、照护、适老化及服务人员。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 56,
+          "quote_zh": "发展社区嵌入式养老服务"
+        }
+      ],
+      "interpretation": {
+        "domestic": "分别验证老人需求、家庭支付、人员与服务密度。",
+        "inbound": "Compare product supply, licensing, distribution and local operation models.",
+        "must_verify": "付款方、照护责任、人员能力、服务范围与适用资格。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P23",
+      "title_zh": "就业、职业与终身技能",
+      "title_en": "Jobs and lifelong skills",
+      "keywords": [
+        "就业",
+        "职业",
+        "技能",
+        "career",
+        "jobs",
+        "skills",
+        "training"
+      ],
+      "policy_fact": "就业与技能培训重视供需匹配。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 58,
+          "quote_zh": "健全终身职业技能培训制度"
+        }
+      ],
+      "interpretation": {
+        "domestic": "从招聘任务和可展示能力出发，而非只选政策热词。",
+        "inbound": "Understand workforce needs; employment eligibility remains a separate question.",
+        "must_verify": "岗位样本、技能差距、培训成本与收入中断风险。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P24",
+      "title_zh": "碳双控与节能服务",
+      "title_en": "Carbon management and efficiency",
+      "keywords": [
+        "碳",
+        "节能",
+        "能源",
+        "carbon",
+        "energy",
+        "climate",
+        "emissions"
+      ],
+      "policy_fact": "绿色转型包含碳核算、能效和规则建设。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 64,
+          "quote_zh": "建立行业碳排放管控机制"
+        }
+      ],
+      "interpretation": {
+        "domestic": "验证节能改造、测量和碳管理的真实需求。",
+        "inbound": "Examine supply-chain requirements and applicable current standards.",
+        "must_verify": "适用标准、客户要求、数据可审计性、经济回报与资质。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P25",
+      "title_zh": "住房保障与品质",
+      "title_en": "Housing and quality",
+      "keywords": [
+        "住房",
+        "房地产",
+        "housing",
+        "real estate"
+      ],
+      "policy_fact": "住房兼顾保障、供给与品质。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 61,
+          "quote_zh": "健全多主体供给、多渠道保障、租购并举的住房制度"
+        }
+      ],
+      "interpretation": {
+        "domestic": "具体购房决策还需本地价格、现金流和使用需求。",
+        "inbound": "A development objective is not evidence of investment returns or eligibility.",
+        "must_verify": "地点、预算、持有周期、当前交易规则与退出成本。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P26",
+      "title_zh": "科技融资与成果转化",
+      "title_en": "Innovation finance and transfer",
+      "keywords": [
+        "创新",
+        "融资",
+        "成果转化",
+        "innovation",
+        "financing",
+        "technology transfer"
+      ],
+      "policy_fact": "科技政策涉及成果转化、融资与创新生态。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 24,
+          "quote_zh": "完善长期资本投早、投小、投长期、投硬科技支持政策"
+        }
+      ],
+      "interpretation": {
+        "domestic": "核查自身是否符合项目条件，不能把支持等同资金已到位。",
+        "inbound": "Study R&D collaboration and entry conditions with prospective partners.",
+        "must_verify": "成果成熟度、合作权利、资金条件、获批与实际到账。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P27",
+      "title_zh": "教育与技能型人才",
+      "title_en": "Education and vocational capability",
+      "keywords": [
+        "教育",
+        "职业教育",
+        "education",
+        "vocational"
+      ],
+      "policy_fact": "教育涉及培养结构、职业能力和有序开放。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 53,
+          "quote_zh": "扩大高水平教育对外开放"
+        }
+      ],
+      "interpretation": {
+        "domestic": "学习选择用能力与岗位需求验证。",
+        "inbound": "Planning openness is not proof of current permission to operate education services.",
+        "must_verify": "办学/服务类型、对象、地区、当前准入与需求。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    },
+    {
+      "id": "P28",
+      "title_zh": "算力投资的效率约束",
+      "title_en": "Compute infrastructure and utilisation",
+      "keywords": [
+        "算力",
+        "芯片",
+        "compute",
+        "chips",
+        "infrastructure"
+      ],
+      "policy_fact": "算力建设强调统筹、有序和使用效率。",
+      "source_refs": [
+        {
+          "source_id": "SRC-DEB47DA253",
+          "pdf_page": 25,
+          "quote_zh": "推进算力资源规模化、集约化、绿色化、普惠化发展"
+        }
+      ],
+      "interpretation": {
+        "domestic": "先验证利用率、成本、交付与需求再投入设备。",
+        "inbound": "Assess local customer needs, permitted supply and deployment economics.",
+        "must_verify": "客户负载、利用率、电力与运维成本、供应和现行限制。"
+      },
+      "interpretation_status": "project synthesis, not an official recommendation"
+    }
+  ]
+}
