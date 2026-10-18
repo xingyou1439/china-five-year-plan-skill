@@ -27,7 +27,7 @@
 https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.1.0/china-five-year-plan-skill-v0.1.0.zip
 ```
 
-然后点击 **专家·技能·连接器 → 技能 → 添加技能 → 上传技能**，选择下载的 ZIP。也可直接点击上方下载链接。[WorkBuddy 官方说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)：自定义包需上传导入，对话一键安装目前仅适用于技能市场中的技能。
+然后点击 **专家·技能·连接器 → 技能 → 添加技能 → 上传技能**，选择下载的 ZIP。在“已安装”中搜索 `china-five-year-plan-skill`，确认已启用，再新建对话使用。也可直接点击上方下载链接。[WorkBuddy 官方说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)：自定义包需上传导入，对话一键安装目前仅适用于技能市场中的技能。
 
 ### Codex
 
@@ -53,15 +53,16 @@ $skill-installer 请安装 GitHub 仓库 https://github.com/xingyou1439/china-fi
 
 安装后输入 `/china-five-year-plan-skill` 调用。个人技能目录见 [Claude Code 官方说明](https://code.claude.com/docs/en/skills#choose-where-skills-load)。
 
-以上为按官方机制编写的安装指令，尚未完成三个客户端逐一实测。安装时应保留完整文件夹，不能只复制 `SKILL.md`。
+已验证 Codex 官方安装器从 GitHub 下载、完整安装及安装后的证据检索；发布 ZIP 的下载与完整性也已验证。WorkBuddy 实际导入、Claude Code 客户端调用尚未完成实测。安装时应保留完整文件夹，不能只复制 `SKILL.md`。
 
 ### 安装后怎么用
 
 复制以下问题，替换为自己的情况（Claude Code 也可用 `/china-five-year-plan-skill` 开头）：
 
 ```text
-使用 $china-five-year-plan-skill，判断我给本地制造企业做 AI 服务的想法，
-与十五五有哪些直接关联。请引用原文，区分政策事实和商业假设。
+请使用 china-five-year-plan-skill，判断我给本地制造企业做 AI 服务的想法，
+与十五五有哪些直接关联。请引用实际读取的规划原文和来源，区分政策事实和商业假设。
+如果未找到该 Skill，请直接说明。
 ```
 
 ```text

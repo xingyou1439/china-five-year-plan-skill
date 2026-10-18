@@ -27,7 +27,7 @@ Download this Skill ZIP to my computer and tell me where it was saved. Keep it z
 https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.1.0/china-five-year-plan-skill-v0.1.0.zip
 ```
 
-Then open **Experts · Skills · Connectors → Skills → Add Skill → Upload Skill** and select the ZIP. You can also use the download link above. [WorkBuddy's official guide](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) requires custom packages to be imported through Upload Skill; chat installation currently covers marketplace skills only.
+Then open **Experts · Skills · Connectors → Skills → Add Skill → Upload Skill** and select the ZIP. Search for `china-five-year-plan-skill` under Installed, confirm it is enabled, and start a new conversation. You can also use the download link above. [WorkBuddy's official guide](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) requires custom packages to be imported through Upload Skill; chat installation currently covers marketplace skills only.
 
 ### Codex
 
@@ -53,15 +53,16 @@ Inspect an existing destination before proceeding; do not overwrite it. Check th
 
 Invoke it with `/china-five-year-plan-skill`. See [Claude Code's official personal skill locations](https://code.claude.com/docs/en/skills#choose-where-skills-load).
 
-These prompts follow documented installation mechanisms; they have not been tested end to end in all three clients. Keep the complete folder, including its references and scripts, rather than copying only `SKILL.md`.
+Verified: GitHub download and complete installation using the official Codex installer, evidence retrieval from the installed files, and the release ZIP's download and integrity. WorkBuddy import and Claude Code invocation have not been tested end to end. Keep the complete folder, including its references and scripts, rather than copying only `SKILL.md`.
 
 ### After installation
 
 Paste a question like these, replacing the scenario with your own. In Claude Code, you can start with `/china-five-year-plan-skill` instead.
 
 ```text
-Use $china-five-year-plan-skill to explain investment in people in China,
-with Chinese source evidence and a plain-English explanation.
+Use china-five-year-plan-skill to explain investment in people in China,
+quoting Chinese policy text you actually read, with sources and a plain-English explanation.
+If the Skill is not installed, say so directly.
 ```
 
 ```text
