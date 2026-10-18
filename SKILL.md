@@ -3,7 +3,7 @@ name: china-five-year-plan-skill
 description: Assess decisions against China's 13th–15th Five-Year Plans with traceable Chinese evidence. Use for 十五五/十四五规划趋势判断、职业创业项目选择、understanding China, and China market entry. Serves domestic users and overseas researchers/businesses in Chinese or English. Current access permissions and business viability need separate evidence.
 metadata:
   author: "xingyou1439"
-  version: "0.1.0"
+  version: "0.2.0"
   source_snapshot: "2026-10-17"
 ---
 
@@ -18,6 +18,8 @@ Turn a concrete question into a source-backed assessment of policy relevance, im
 - **China market entry:** establish the product/service, customer, target location, company jurisdiction and entry model as needed. Separate policy direction, demand, access eligibility and operating requirements. Use [the method](references/decision-method.md).
 
 Start when the question is specific enough. Ask only for information that materially changes the answer; label remaining assumptions. A choice with no material connection to national policy may be classified **not meaningfully related**.
+
+For questions about manufacturing AI services, robotics support, eldercare payers, the policy-to-order chain or transferable skills, optionally read the matching [public decision card](guide/README.md). These are constructed scenarios, not user facts or verified businesses. Their candidate roles, payer hypotheses and two-week experiments require adaptation. The four dated official follow-up sources are in [guide/cards.json](guide/cards.json); preserve each source's scope and do not treat a passed reporting deadline as an open application window.
 
 ## Retrieve before concluding
 

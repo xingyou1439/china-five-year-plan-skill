@@ -1,0 +1,37 @@
+name: 决策卡使用反馈与纠错
+description: 告诉我们哪张卡改变了你的判断，或哪里需要修正。
+title: "[决策卡反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: "此处提交会公开。请使用匿名情境，不填写个人联系方式、客户原始资料、证件或病历。"
+  - type: dropdown
+    id: card
+    attributes:
+      label: 你读了哪张卡
+      options:
+        - 01 制造业AI
+        - 02 机器人配套
+        - 03 养老付款方
+        - 04 政策到订单
+        - 05 技能迁移
+        - 其他或整体体验
+    validations:
+      required: true
+  - type: textarea
+    id: changed
+    attributes:
+      label: 看前怎么想，看后改变了什么
+      description: 可以是新增、放弃或调整一个动作；没有改变也请如实说。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 不清楚、不能执行或可能有错的地方
+      description: 纠错请附原始官方链接及条款。
+  - type: textarea
+    id: action
+    attributes:
+      label: 你实际做了哪一步，得到什么结果
+      description: 不要求公开私人业务信息。没有行动可以写尚未行动。

@@ -19,6 +19,42 @@ PUBLIC_FILES = frozenset({
     "references/source-catalogue.json", "scripts/search_evidence.py", "scripts/verify_bundle.py",
     "scripts/verify_publication.py", "tests/behavioral-cases.md", "tests/test_evidence.py",
     "tests/test_publication_security.py",
+    '.github/ISSUE_TEMPLATE/guide-feedback.yml',
+    '.github/workflows/pages.yml',
+    'guide/README.md',
+    'guide/CONTRIBUTING.md',
+    'guide/cards.json',
+    'launch/launch-kit.md',
+    'launch/question-backlog.md',
+    'launch/reader-test-template.csv',
+    'scripts/build_reader.py',
+    'scripts/build_pdf.py',
+    'scripts/verify_guide.py',
+    'site/index.html',
+    'site/style.css',
+    'site/app.js',
+    'site/.nojekyll',
+    'scripts/build_qr.py',
+    'site/cards/qr-01.svg',
+    'site/cards/qr-02.svg',
+    'site/cards/qr-03.svg',
+    'site/cards/qr-04.svg',
+    'site/cards/qr-05.svg',
+    'guide/card-01.md',
+    'guide/card-02.md',
+    'guide/card-03.md',
+    'guide/card-04.md',
+    'guide/card-05.md',
+    'site/cards/manufacturing-ai.html',
+    'site/cards/robotics-services.html',
+    'site/cards/eldercare-payer.html',
+    'site/cards/policy-to-order.html',
+    'site/cards/skills-transfer.html',
+    'site/cards/share-01.html',
+    'site/cards/share-02.html',
+    'site/cards/share-03.html',
+    'site/cards/share-04.html',
+    'site/cards/share-05.html',
 })
 PATTERNS = {
     "email_address": re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}"),
@@ -60,7 +96,7 @@ def file_manifest(root):
     for name in sorted(PUBLIC_FILES - {MANIFEST}):
         data = (root / name).read_bytes()
         entries.append({"path": name, "sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)})
-    return {"version": "0.1.0", "files": entries}
+    return {"version": "0.2.0", "files": entries}
 
 
 def audit(root=ROOT, private_markers=(), write_manifest=False):

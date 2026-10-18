@@ -1,5 +1,9 @@
 # China Five-Year Plan Decision Reference Skill
 
+[Chinese public guide and five decision scenarios](https://xingyou1439.github.io/china-five-year-plan-skill/) · [Guide sources](guide/cards.json)
+
+The public guide uses constructed scenarios and separates policy evidence from unvalidated roles, customer demand and experiments. Four additional official documents were checked on 2026-10-18; this is not a comprehensive refresh of the underlying corpus. The original three English/Chinese task paths remain available.
+
 [中文](README.md)
 
 An open-source, bilingual AI skill for understanding China and making informed decisions about careers, ventures, projects and China market entry. It connects China's 13th, 14th and 15th Five-Year Plans (2026–2030) with traceable policy evidence, cross-plan comparisons and practical validation steps.
@@ -16,7 +20,7 @@ The Skill separates policy alignment, demand, capability, timing and current acc
 
 ## Use
 
-[Download v0.1.0](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.1.0/china-five-year-plan-skill-v0.1.0.zip) · [Releases](https://github.com/xingyou1439/china-five-year-plan-skill/releases)
+[Download v0.2.0](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.0/china-five-year-plan-skill-v0.2.0.zip) · [Releases](https://github.com/xingyou1439/china-five-year-plan-skill/releases)
 
 ### WorkBuddy
 
@@ -24,7 +28,7 @@ Paste into the WorkBuddy chat to download the package:
 
 ```text
 Download this Skill ZIP to my computer and tell me where it was saved. Keep it zipped:
-https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.1.0/china-five-year-plan-skill-v0.1.0.zip
+https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.0/china-five-year-plan-skill-v0.2.0.zip
 ```
 
 Then open **Experts · Skills · Connectors → Skills → Add Skill → Upload Skill** and select the ZIP. Search for `china-five-year-plan-skill` under Installed, confirm it is enabled, and start a new conversation. You can also use the download link above. [WorkBuddy's official guide](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) requires custom packages to be imported through Upload Skill; chat installation currently covers marketplace skills only.
@@ -35,7 +39,7 @@ Paste into your local Codex chat:
 
 ```text
 $skill-installer Install https://github.com/xingyou1439/china-five-year-plan-skill
-Ref: v0.1.0; path within the repository: .; install name: china-five-year-plan-skill.
+Ref: v0.2.0; path within the repository: .; install name: china-five-year-plan-skill.
 Install the complete folder and check that SKILL.md and references/ are present. Inspect any existing installation before proceeding; do not overwrite it.
 ```
 
@@ -46,7 +50,7 @@ Start a new conversation after installation; restart Codex if the Skill is not d
 Paste into your local Claude Code chat:
 
 ```text
-Install the complete v0.1.0 version of https://github.com/xingyou1439/china-five-year-plan-skill
+Install the complete v0.2.0 version of https://github.com/xingyou1439/china-five-year-plan-skill
 into ~/.claude/skills/china-five-year-plan-skill, preserving relative file paths.
 Inspect an existing destination before proceeding; do not overwrite it. Check that SKILL.md and references/ are present.
 ```
@@ -98,4 +102,4 @@ Reviewed on **2026-10-17**, the supplied directory contains 133 PDFs (126 distin
 
 The documents mainly date through March 2026. Current implementation, access, licensing and other regulated questions require fresh primary-source verification for the actual activity, entity and geography. Archived forecasts are not current data. Raw broker reports and course PDFs are not distributed. Source-page numbers refer to the supplied editions and may differ from online copies. See [source notice](SOURCE_NOTICE.md).
 
-**Version:** v0.1.0. This independent reference tool does not claim official endorsement, marketplace listing, validation on every host or demonstrated commercial outcomes.
+**Version:** v0.2.0. This independent reference tool does not claim official endorsement, marketplace listing, validation on every host or demonstrated commercial outcomes.

@@ -1,10 +1,20 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "files": [
     {
+      "path": ".github/ISSUE_TEMPLATE/guide-feedback.yml",
+      "sha256": "23a90de9a857fc2eef614be562374b0933ad6355592988d6d00309ce32f11d7a",
+      "bytes": 1241
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "f1561b0db011cfa4f093088d41630b615100e32a7a94070a5c5210425a7a7f45",
+      "bytes": 947
+    },
+    {
       "path": ".github/workflows/validate.yml",
-      "sha256": "bb078a98e23b044e978b96b8e7f6dfd317b3318c59ff2db0c6d6557573c4e880",
-      "bytes": 634
+      "sha256": "36995cb32f451e5938770c0645e837d615e37faf97ebc44d241be7dfcaf32417",
+      "bytes": 732
     },
     {
       "path": ".gitignore",
@@ -18,23 +28,23 @@
     },
     {
       "path": "PUBLICATION_SECURITY.md",
-      "sha256": "6396669aab62cb685e7e8ffcef6fa6847afeb521570110e72f141eb2bd3ce3de",
-      "bytes": 2629
+      "sha256": "370858c64be1ecb1c1bcdd1f7cbe605cf30f3df231c496afcf6f6c59976e3d8e",
+      "bytes": 3113
     },
     {
       "path": "README.en.md",
-      "sha256": "071403bc18a2b510a8813101ab0eb9f2c2ddf3c38a5bf3a9fa8ed815f298839c",
-      "bytes": 6582
+      "sha256": "cf20f3f8393adbfd88fcb3cc92137d24bcfd53ff231d1d7b7ebefe6ab6b03827",
+      "bytes": 7051
     },
     {
       "path": "README.md",
-      "sha256": "6320a6947d2805563e6f67f00b59d84c3267f663922ba82d854a78728b6c31a9",
-      "bytes": 7135
+      "sha256": "63b33ac2953f4efc11ff70c60053386e351d8f0d0cc1d8447f3b27cbd280a49c",
+      "bytes": 9375
     },
     {
       "path": "SKILL.md",
-      "sha256": "5e9d5a6effa6d80d71d16edb9930a2fe95c9e06e09f8709fb3dc6954fd2d392e",
-      "bytes": 6900
+      "sha256": "9e4ddb5a1bff314e5ee3e3cd945ffd1fb6d5177c4fcd560fbc3b2e929e3b1cce",
+      "bytes": 7453
     },
     {
       "path": "SOURCE_NOTICE.md",
@@ -60,6 +70,61 @@
       "path": "examples/understand-china.md",
       "sha256": "38a11b3de81bdc0177abbe2258cf19a7a2a50cae96393ac4d0a7f3a3d3f55130",
       "bytes": 1039
+    },
+    {
+      "path": "guide/CONTRIBUTING.md",
+      "sha256": "9bfe2fb2591ceae63abe9ac6d960a680c979457e3a7115cfb915b382136de5c9",
+      "bytes": 1593
+    },
+    {
+      "path": "guide/README.md",
+      "sha256": "4b08a9c9f76663322d3bbf57d57d7e8989a999abbb9163a16f891ae1ea7bee66",
+      "bytes": 1223
+    },
+    {
+      "path": "guide/card-01.md",
+      "sha256": "853940ca25fa57c67a455b43b0346b6543cc0195b9ae1342346da8fa65dcfca8",
+      "bytes": 4391
+    },
+    {
+      "path": "guide/card-02.md",
+      "sha256": "b02a2ad4bd129a7f3a74634ac46a09c7a580a9edad9b248232099e8d567fa212",
+      "bytes": 4016
+    },
+    {
+      "path": "guide/card-03.md",
+      "sha256": "294ec73ff044d3d774fe5e825b45446a5ac15f39fe0268e69a0cdb2cb3ac4162",
+      "bytes": 3925
+    },
+    {
+      "path": "guide/card-04.md",
+      "sha256": "527bbf862622f420b6aa54f0140b8bb6a355ff6c651b848f512128d4a200a206",
+      "bytes": 3346
+    },
+    {
+      "path": "guide/card-05.md",
+      "sha256": "5074486864c9ed58bfdb5772dc4fac9c4c4f05c28d72b2dc56e910edac207a68",
+      "bytes": 3910
+    },
+    {
+      "path": "guide/cards.json",
+      "sha256": "7bfb798febb634561560ec9513974dc2bfdb0e78e90042f708345b430b01405d",
+      "bytes": 17257
+    },
+    {
+      "path": "launch/launch-kit.md",
+      "sha256": "728632f04ab5b99aa316e8b25f1c914b35e13d49c9296bb7b7d98b6566dc584a",
+      "bytes": 7444
+    },
+    {
+      "path": "launch/question-backlog.md",
+      "sha256": "7b3717be0981d05713ea37cb7f14d953171361292b7ffdb53d6e84a8061caef2",
+      "bytes": 2022
+    },
+    {
+      "path": "launch/reader-test-template.csv",
+      "sha256": "cc7da1eb1125fc6a745c5faa534bb45768d26e976bc9a81eff914eeda138322f",
+      "bytes": 862
     },
     {
       "path": "references/china-context.md",
@@ -112,6 +177,21 @@
       "bytes": 95829
     },
     {
+      "path": "scripts/build_pdf.py",
+      "sha256": "b6d02c92edc28f992c6a3105bf68e57345e42067d35f09284bd95b24c5a03ccd",
+      "bytes": 10609
+    },
+    {
+      "path": "scripts/build_qr.py",
+      "sha256": "7091d55fca0ffdb4011ba09bc8f1eb0143fdb827042eec4e5dfa97af6844efd3",
+      "bytes": 836
+    },
+    {
+      "path": "scripts/build_reader.py",
+      "sha256": "7b7572f575e07f82bebec352af731aa3d69ee61c4524d1b4874549982ab1de31",
+      "bytes": 17436
+    },
+    {
       "path": "scripts/search_evidence.py",
       "sha256": "3dafa361d4ae7ed23ef6c8bd890eb8d372b5e216a96db674f7275e9e42022f5e",
       "bytes": 4773
@@ -122,9 +202,109 @@
       "bytes": 2333
     },
     {
+      "path": "scripts/verify_guide.py",
+      "sha256": "c144bce045509005bca9ce3527533fd3d7cc09ceeaca150f20c7e0b8d8c5e347",
+      "bytes": 3617
+    },
+    {
       "path": "scripts/verify_publication.py",
-      "sha256": "2c4e0a449a58ac1860f21b9c753e0c2e9428920ffb4bcd0b6bc8de0d07bca5d0",
-      "bytes": 5806
+      "sha256": "ade61f2f67dacb204dacf09dbdedfc78f1eb5ca868ae8817bacf5d72cad095b1",
+      "bytes": 6888
+    },
+    {
+      "path": "site/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "site/app.js",
+      "sha256": "ef98839300cdf028bce047217dbdf0997ad02d3953341917d5b18152c69cc50b",
+      "bytes": 5871
+    },
+    {
+      "path": "site/cards/eldercare-payer.html",
+      "sha256": "9178530dcec486941f9e19519234b7643846c8b20f78f7c7291d3f4eaac3823e",
+      "bytes": 23428
+    },
+    {
+      "path": "site/cards/manufacturing-ai.html",
+      "sha256": "a04acf323d07ec5e1321db00df5e7dfb8e0cb029563d331d0f8179dcbf622a03",
+      "bytes": 24295
+    },
+    {
+      "path": "site/cards/policy-to-order.html",
+      "sha256": "65e8d652f48f49e1fb9b1b2a50fab40639428416add915402f7983a013b92a54",
+      "bytes": 22920
+    },
+    {
+      "path": "site/cards/qr-01.svg",
+      "sha256": "8cbdf21ae8a67251461ed60a1d7c198a414e1b82f63c9d8ace37743b62de837a",
+      "bytes": 76575
+    },
+    {
+      "path": "site/cards/qr-02.svg",
+      "sha256": "12e76e2a207f5038e12b24fa51afaaae32b56a9988d5b35f64b820f6005e5c38",
+      "bytes": 96459
+    },
+    {
+      "path": "site/cards/qr-03.svg",
+      "sha256": "d699a557a0c717092b7de09e00ea0815fc0771918c98952e881d1b30a74fc891",
+      "bytes": 76141
+    },
+    {
+      "path": "site/cards/qr-04.svg",
+      "sha256": "8f03a6c6b4f06413fed08456c84dce281fb5141507ba1dbbbe00b9a563727b34",
+      "bytes": 76564
+    },
+    {
+      "path": "site/cards/qr-05.svg",
+      "sha256": "f56e3acbc5115fffe2f5a65359b53722aacf0e550cf678cd6956d4f7a9126043",
+      "bytes": 75930
+    },
+    {
+      "path": "site/cards/robotics-services.html",
+      "sha256": "7dab3b230a6cc3dbf67d203442ee935cf15a9f5d605060664922f2c8da173cd1",
+      "bytes": 23763
+    },
+    {
+      "path": "site/cards/share-01.html",
+      "sha256": "64db25a709a77c72308c64d4b23f73a8b221b1dc68cb3b63855cd307ad50e998",
+      "bytes": 2561
+    },
+    {
+      "path": "site/cards/share-02.html",
+      "sha256": "224e229927a4d71e8e5c4b4263bb89ebf4b83032ac87a5c8ce4000888440523b",
+      "bytes": 2585
+    },
+    {
+      "path": "site/cards/share-03.html",
+      "sha256": "afdfdcd64bfdcb8385d45ff7d89216f01afa91dc1ed7bcabada2cfca9498d536",
+      "bytes": 2452
+    },
+    {
+      "path": "site/cards/share-04.html",
+      "sha256": "8ec5671b76e2ee4e3b9b50aba489b14caa067f6408dc6d689583b1139dcd62f6",
+      "bytes": 2530
+    },
+    {
+      "path": "site/cards/share-05.html",
+      "sha256": "19b23c8a44ef3f099b30a20cb8ddc4a0af17660e14c436af88e91e7b09333528",
+      "bytes": 2544
+    },
+    {
+      "path": "site/cards/skills-transfer.html",
+      "sha256": "ce09e401315ce3eb985ac925967511c57d725559439bf6e26e0a4a52482b041f",
+      "bytes": 23673
+    },
+    {
+      "path": "site/index.html",
+      "sha256": "7212d23e3ac214e660a6215ef5b882a99cc4cfc92acd69f1079cf7d4573a5fbf",
+      "bytes": 26339
+    },
+    {
+      "path": "site/style.css",
+      "sha256": "8f32d8f7b66e3430bad5a890988af2b9d3fd6cd9a3ff54fd7816b2d524a6b56a",
+      "bytes": 10058
     },
     {
       "path": "tests/behavioral-cases.md",
