@@ -2,7 +2,9 @@
 
 基于十五五规划的职业与小生意决策参考。帮你看清可以服务谁、交付什么，以及下一步先验证什么；每项判断附政策出处、参与门槛和停止条件。
 
-[打开手机阅读页](https://xingyou1439.github.io/china-five-year-plan-skill/) · [免费下载短版PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.0/five-year-guide-v0.2.0.pdf) · [English](README.en.md)
+[打开手机阅读页](https://xingyou1439.github.io/china-five-year-plan-skill/) · [免费下载短版PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/five-year-guide-v0.2.1.pdf) · [English](README.en.md)
+
+默认用书名、章节和原文链接说明依据。需要逐页核验时，再提供所用版本与PDF页码。v0.2.1改进了引用和读者表达，基础资料日期未因此更新。
 
 ## 先看与你有关的一个问题
 
@@ -18,7 +20,7 @@
 
 每张卡都沿“政策方向 → 实施工具与项目 → 客户与付款方 → 可交付任务 → 验证行动”展开。查不到的一环先留空，不把规划目标写成个人订单。
 
-[阅读全部卡片](guide/README.md) · [下载分享图与发布包](https://github.com/xingyou1439/china-five-year-plan-skill/releases/tag/v0.2.0) · [反馈使用结果](https://github.com/xingyou1439/china-five-year-plan-skill/issues/new?template=guide-feedback.yml)
+[阅读全部卡片](guide/README.md) · [下载分享图与发布包](https://github.com/xingyou1439/china-five-year-plan-skill/releases/tag/v0.2.1) · [反馈使用结果](https://github.com/xingyou1439/china-five-year-plan-skill/issues/new?template=guide-feedback.yml)
 
 ## 把你自己的情况带入分析
 
@@ -32,7 +34,7 @@
 
 ## 安装与使用
 
-[下载 v0.2.0 安装包](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.0/china-five-year-plan-skill-v0.2.0.zip) · [查看版本](https://github.com/xingyou1439/china-five-year-plan-skill/releases)
+[下载 v0.2.1 安装包](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/china-five-year-plan-skill-v0.2.1.zip) · [查看版本](https://github.com/xingyou1439/china-five-year-plan-skill/releases)
 
 ### WorkBuddy
 
@@ -40,7 +42,7 @@
 
 ```text
 请下载这个 Skill 安装包到本机，告诉我保存位置，保留 ZIP 不解压：
-https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.0/china-five-year-plan-skill-v0.2.0.zip
+https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/china-five-year-plan-skill-v0.2.1.zip
 ```
 
 然后点击 **专家·技能·连接器 → 技能 → 添加技能 → 上传技能**，选择下载的 ZIP。在“已安装”中搜索 `china-five-year-plan-skill`，确认已启用，再新建对话使用。也可直接点击上方下载链接。[WorkBuddy 官方说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)：自定义包需上传导入，对话一键安装目前仅适用于技能市场中的技能。
@@ -51,7 +53,7 @@ https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2
 
 ```text
 $skill-installer 请安装 GitHub 仓库 https://github.com/xingyou1439/china-five-year-plan-skill
-版本 ref：v0.2.0；仓库内路径：.；安装名称：china-five-year-plan-skill。
+版本 ref：v0.2.1；仓库内路径：.；安装名称：china-five-year-plan-skill。
 请安装完整目录，检查 SKILL.md 和 references/ 是否齐全；如已存在，请先检查，不要覆盖。
 ```
 
@@ -62,14 +64,14 @@ $skill-installer 请安装 GitHub 仓库 https://github.com/xingyou1439/china-fi
 复制到本机 Claude Code 对话框：
 
 ```text
-请将 https://github.com/xingyou1439/china-five-year-plan-skill 的 v0.2.0 版本完整安装到
+请将 https://github.com/xingyou1439/china-five-year-plan-skill 的 v0.2.1 版本完整安装到
 ~/.claude/skills/china-five-year-plan-skill，保留所有文件的相对位置。
 如目标目录已存在，请先检查，不要覆盖。完成后检查 SKILL.md 和 references/ 是否齐全。
 ```
 
 安装后输入 `/china-five-year-plan-skill` 调用。个人技能目录见 [Claude Code 官方说明](https://code.claude.com/docs/en/skills#choose-where-skills-load)。
 
-v0.1.0曾验证 Codex 官方安装器下载、完整安装及证据检索。v0.2.0本次完成发布包完整性与本地证据检索检查；客户端安装状态以对应实测记录为准。WorkBuddy 实际导入、Claude Code 客户端调用尚未完成实测。安装时应保留完整文件夹，不能只复制 `SKILL.md`。
+v0.1.0曾验证 Codex 官方安装器下载、完整安装及证据检索。v0.2.1本次完成发布包完整性与本地证据检索检查；客户端安装状态以对应实测记录为准。WorkBuddy 实际导入、Claude Code 客户端调用尚未完成实测。安装时应保留完整文件夹，不能只复制 `SKILL.md`。
 
 ### 安装后怎么用
 
@@ -126,11 +128,13 @@ python3 scripts/build_reader.py
 python3 scripts/verify_guide.py
 ```
 
+如需附精确页码的核验版，可给PDF生成命令加 `--audit-citations`；普通读者版默认只显示书名、章节和来源链接。
+
 PDF和分享二维码的重建另需ReportLab，以及支持中文的TrueType字体。日常阅读、Skill检索与校验不需要这些依赖。PDF和PNG写到仓库外，核验后作为Release附件发布：
 
 ```sh
 python3 scripts/build_qr.py
-python3 scripts/build_pdf.py --output ../guide-output/five-year-guide-v0.2.0.pdf --font /path/to/cjk-font.ttf
+python3 scripts/build_pdf.py --output ../guide-output/five-year-guide-v0.2.1.pdf --font /path/to/cjk-font.ttf
 ```
 
 [发布文案与两周验证流程](launch/launch-kit.md) · [20个问题与进度](launch/question-backlog.md) · [匿名试用记录模板](launch/reader-test-template.csv)
@@ -145,4 +149,4 @@ python3 scripts/build_pdf.py --output ../guide-output/five-year-guide-v0.2.0.pdf
 
 ## 状态
 
-`v0.2.0`。这是独立的政策参考工具，新增公众指南与阅读页；尚未提交技能市场，未声称获得官方背书、完成所有宿主实测或验证商业效果。
+`v0.2.1`。这是独立的政策参考工具，新增公众指南与阅读页；尚未提交技能市场，未声称获得官方背书、完成所有宿主实测或验证商业效果。

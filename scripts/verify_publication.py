@@ -30,6 +30,7 @@ PUBLIC_FILES = frozenset({
     'scripts/build_reader.py',
     'scripts/build_pdf.py',
     'scripts/verify_guide.py',
+    'tests/test_reader_citations.py',
     'site/index.html',
     'site/style.css',
     'site/app.js',
@@ -96,7 +97,7 @@ def file_manifest(root):
     for name in sorted(PUBLIC_FILES - {MANIFEST}):
         data = (root / name).read_bytes()
         entries.append({"path": name, "sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)})
-    return {"version": "0.2.0", "files": entries}
+    return {"version": "0.2.1", "files": entries}
 
 
 def audit(root=ROOT, private_markers=(), write_manifest=False):

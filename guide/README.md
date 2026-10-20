@@ -1,6 +1,6 @@
 # 未来五年普通人的机会与避坑指南
 
-基于十五五规划的职业与小生意决策参考。v0.2.0，核验日期2026-10-18。
+基于十五五规划的职业与小生意决策参考。v0.2.1，核验日期2026-10-18。
 
 先选一个与你有关的问题，读依据、付款方与验证动作，再决定是否扩大投入。以下均为构造场景；商业需求和个人适配待验证。
 
@@ -10,7 +10,7 @@
 - [国家支持的行业，为什么你仍然接不到订单？](card-04.md)
 - [已有营销、设计或培训经验，怎样参与新方向？](card-05.md)
 
-[手机阅读页](https://xingyou1439.github.io/china-five-year-plan-skill/) · [短版PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.0/five-year-guide-v0.2.0.pdf)
+[手机阅读页](https://xingyou1439.github.io/china-five-year-plan-skill/) · [短版PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/five-year-guide-v0.2.1.pdf)
 
 ## 如何转载与改编
 
