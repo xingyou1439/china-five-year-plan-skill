@@ -35,6 +35,8 @@ PUBLIC_FILES = frozenset({
     'site/style.css',
     'site/app.js',
     'site/.nojekyll',
+    'site/sitemap.xml',
+    'site/googlee7f968b7a3579e7a.html',
     'scripts/build_qr.py',
     'site/cards/qr-01.svg',
     'site/cards/qr-02.svg',

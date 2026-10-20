@@ -1,8 +1,10 @@
-# 未来五年，普通人的机会与避坑指南
+# 十五五规划解读与职业创业决策指南
 
-基于十五五规划的职业与小生意决策参考。帮你看清可以服务谁、交付什么，以及下一步先验证什么；每项判断附政策出处、参与门槛和停止条件。
+**未来五年，普通人的机会与避坑指南。**
 
-[打开手机阅读页](https://xingyou1439.github.io/china-five-year-plan-skill/) · [免费下载短版PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/five-year-guide-v0.2.1.pdf) · [English](README.en.md)
+基于十三五、十四五规划与十五五规划（2026—2030），为职业选择、技能学习、AI服务创业和小生意方向提供可追溯的政策依据。通过5张决策卡，帮你看清可以服务谁、交付什么，以及下一步先验证什么；同时提供免费短版PDF和双语AI Skill。政策支持、客户需求和个人适配分别判断。
+
+[十五五规划职业创业指南：在线阅读](https://xingyou1439.github.io/china-five-year-plan-skill/) · [免费下载短版PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/five-year-guide-v0.2.1.pdf) · [English](README.en.md)
 
 默认用书名、章节和原文链接说明依据。需要逐页核验时，再提供所用版本与PDF页码。v0.2.1改进了引用和读者表达，基础资料日期未因此更新。
 
@@ -10,17 +12,29 @@
 
 无需安装即可阅读。以下均为构造场景；政策依据与商业假设分别标明，真实需求、付款和个人适配待验证。
 
-| 你的问题 | 从这里开始 |
-| --- | --- |
-| 给制造企业做AI，先培训、实施还是做软件？ | [决策卡01](guide/card-01.md) |
-| 不会造机器人，小团队能参与哪一段？ | [决策卡02](guide/card-02.md) |
-| 想做养老业务，谁使用、谁决定、谁付钱？ | [决策卡03](guide/card-03.md) |
-| 国家支持的行业，为什么仍然接不到订单？ | [决策卡04](guide/card-04.md) |
-| 已有营销、设计或培训能力，怎样迁移？ | [决策卡05](guide/card-05.md) |
+| 你的问题 | 在线阅读与完整依据 | 仓库原文 |
+| --- | --- | --- |
+| 给制造企业做 AI，先培训、实施，还是做软件？ | [十五五规划与制造业AI服务：先培训、实施，还是做软件？](https://xingyou1439.github.io/china-five-year-plan-skill/cards/manufacturing-ai.html) | [决策卡01](guide/card-01.md) |
+| 不会造机器人，小团队能参与哪一段？ | [十五五机器人方向：不会造机器人，小团队能参与哪一段？](https://xingyou1439.github.io/china-five-year-plan-skill/cards/robotics-services.html) | [决策卡02](guide/card-02.md) |
+| 想做养老业务，老人、子女、机构，谁会付钱？ | [十五五养老服务创业：老人、子女、机构，谁会付钱？](https://xingyou1439.github.io/china-five-year-plan-skill/cards/eldercare-payer.html) | [决策卡03](guide/card-03.md) |
+| 国家支持的行业，为什么你仍然接不到订单？ | [十五五创业方向怎么判断：从政策支持走到客户订单](https://xingyou1439.github.io/china-five-year-plan-skill/cards/policy-to-order.html) | [决策卡04](guide/card-04.md) |
+| 已有营销、设计或培训经验，怎样参与新方向？ | [十五五职业选择与技能转型：营销、设计、培训经验怎样用？](https://xingyou1439.github.io/china-five-year-plan-skill/cards/skills-transfer.html) | [决策卡05](guide/card-05.md) |
 
 每张卡都沿“政策方向 → 实施工具与项目 → 客户与付款方 → 可交付任务 → 验证行动”展开。查不到的一环先留空，不把规划目标写成个人订单。
 
 [阅读全部卡片](guide/README.md) · [下载分享图与发布包](https://github.com/xingyou1439/china-five-year-plan-skill/releases/tag/v0.2.1) · [反馈使用结果](https://github.com/xingyou1439/china-five-year-plan-skill/issues/new?template=guide-feedback.yml)
+
+## 十五五规划怎么用于职业和创业选择？
+
+十五五规划对应2026—2030年。项目将相关原文连接到实施工具、客户与付款方、个人可交付任务，再设计验证动作。可以先读[从政策支持到客户订单](guide/card-04.md)，再选择制造业AI服务、机器人、养老服务或技能迁移案例。
+
+### 可以直接根据规划决定转行或创业吗？
+
+还需要核实所在城市、目标岗位或客户需求、预算、能力与经营条件。项目明确区分官方事实、分析推导和待验证假设；规划目标不能直接证明个人收入、补贴资格或客户订单。
+
+### 免费PDF与AI Skill有什么区别？
+
+短版PDF整理了本项目5张构造决策卡、判断方法和验证工作纸，便于离线阅读；它不是国家规划全文。AI Skill用于带入个人情况继续分析，需在支持的助手中安装。先[在线阅读决策卡](guide/README.md)，需要个性化分析时再看[安装与使用](#安装与使用)。官方规划请查[十五五纲要全文](https://www.bjrd.gov.cn/zyfb/zt/14jqgrd04chybjdbthdztbd/wjbg/202603/t20260314_4557219.html)。
 
 ## 把你自己的情况带入分析
 

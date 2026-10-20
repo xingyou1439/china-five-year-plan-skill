@@ -1,4 +1,4 @@
-# China Five-Year Plan Decision Reference Skill
+# China's 15th Five-Year Plan (2026–2030): Policy Analysis and Decision Reference
 
 [Chinese public guide and five decision scenarios](https://xingyou1439.github.io/china-five-year-plan-skill/) · [Guide sources](guide/cards.json)
 

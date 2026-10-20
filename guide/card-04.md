@@ -52,6 +52,13 @@ v0.2.1 · 资料整理于2026-10-18
 
 **使用提醒：** 采购公告也不等于你符合投标条件，更不等于已经中标；不代写虚构资质。
 
+## 相关决策卡
+
+- [十五五规划与制造业AI服务：先培训、实施，还是做软件？](card-01.md)
+- [十五五养老服务创业：老人、子女、机构，谁会付钱？](card-03.md)
+
+[在线阅读本卡](https://xingyou1439.github.io/china-five-year-plan-skill/cards/policy-to-order.html) · [返回全部决策卡](README.md)
+
 ## 个性化提问
 
 ```text

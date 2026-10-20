@@ -54,6 +54,13 @@ v0.2.1 · 资料整理于2026-10-18
 
 **使用提醒：** 客户数据需获授权；部署、数据和行业要求按具体项目核实。
 
+## 相关决策卡
+
+- [十五五职业选择与技能转型：营销、设计、培训经验怎样用？](card-05.md)
+- [十五五创业方向怎么判断：从政策支持走到客户订单](card-04.md)
+
+[在线阅读本卡](https://xingyou1439.github.io/china-five-year-plan-skill/cards/manufacturing-ai.html) · [返回全部决策卡](README.md)
+
 ## 个性化提问
 
 ```text

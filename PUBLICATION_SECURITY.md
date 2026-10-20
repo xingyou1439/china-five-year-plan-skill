@@ -20,6 +20,8 @@
 
 PDF与分享PNG由审核后的guide/cards.json和政策引文生成，不提交到源仓库；发布前检查PDF文本、元数据、PNG视觉内容与各资产哈希，作为Release附件分发。测试表不含真实联系人或业务信息。
 
+网站还发布由所有者提供的 Google Search Console HTML 所有权验证文件，仅含公开验证标识；文件按固定路径纳入白名单和内容指纹检查，部署后保留以维持验证。
+
 ## English
 
 Only explicitly allowlisted, reviewed project files are published. Raw research documents, internal materials, participant information, personal assignments, local source paths and credentials are excluded. Bibliographic metadata is reduced to public document identity and review coverage.

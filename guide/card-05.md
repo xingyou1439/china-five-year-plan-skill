@@ -53,6 +53,13 @@ v0.2.1 · 资料整理于2026-10-18
 
 **使用提醒：** 构造样本应注明演示性质，不把示例公司或模拟结果写成客户案例。
 
+## 相关决策卡
+
+- [十五五规划与制造业AI服务：先培训、实施，还是做软件？](card-01.md)
+- [十五五机器人方向：不会造机器人，小团队能参与哪一段？](card-02.md)
+
+[在线阅读本卡](https://xingyou1439.github.io/china-five-year-plan-skill/cards/skills-transfer.html) · [返回全部决策卡](README.md)
+
 ## 个性化提问
 
 ```text
