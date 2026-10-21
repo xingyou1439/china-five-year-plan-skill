@@ -1,24 +1,20 @@
 # China's 15th Five-Year Plan (2026–2030): Policy Analysis and Decision Reference
 
-[Chinese public guide and five decision scenarios](https://xingyou1439.github.io/china-five-year-plan-skill/) · [Guide sources](guide/cards.json)
+**Understand China's priorities and decide what to investigate next.**
 
-The public guide uses constructed scenarios and separates policy evidence from unvalidated roles, customer demand and experiments. Four additional official documents were checked on 2026-10-18; this is not a comprehensive refresh of the underlying corpus. The original three English/Chinese task paths remain available.
+A free, bilingual AI skill for exploring careers, learning, ventures, projects and China market entry. Install it in a compatible AI assistant, describe your situation, and ask a question. It draws on China's 13th, 14th and 15th Five-Year Plans, with traceable sources and practical next steps.
 
-[中文](README.md)
+[Get started](#use) · [中文](README.md) · [Read before installing](https://xingyou1439.github.io/china-five-year-plan-skill/)
 
-An open-source, bilingual AI skill for understanding China and making informed decisions about careers, ventures, projects and China market entry. It connects China's 13th, 14th and 15th Five-Year Plans (2026–2030) with traceable policy evidence, cross-plan comparisons and practical validation steps.
+## What can you ask?
 
-Its workflow follows policy direction → implementation instruments → customers and payers → accessible roles → validation, while separating official facts, research opinions and business assumptions.
+- How have China's eldercare priorities changed from the 14th to the 15th Five-Year Plan? Explain the changes in plain English and link to the original text.
+- I have five years of marketing experience and want to learn AI. Which adjacent directions should I investigate, and what skills would I need?
+- We supply eldercare technology overseas. What policy priorities and current market-entry conditions should we verify before considering China?
 
-Citations default to readable document titles, chapters or sections and source links. Exact PDF pages are provided when explicitly requested for verification or audit. Version 0.2.1 improves presentation; it does not refresh the policy corpus.
+Include your location, experience, alternatives, time and budget where relevant. Answers explain the judgment, cite document titles and sections, identify missing evidence and suggest a next step. Policy direction, demand, capability and operating eligibility are assessed separately; insufficient evidence is a valid result.
 
-## Who it serves
-
-- People in China evaluating careers, learning, ventures and projects.
-- Overseas researchers seeking context on China's priorities and institutions.
-- Overseas businesses researching China market entry, partnerships and implementation conditions.
-
-The Skill separates policy alignment, demand, capability, timing and current access eligibility. It can conclude that evidence is insufficient or a question is not meaningfully related to the plans.
+Optional [Chinese examples and short PDF](https://xingyou1439.github.io/china-five-year-plan-skill/#downloads) demonstrate the method through hypothetical scenarios. They are supporting reading; use the installed Skill to analyze your own situation. English explanations are not official translations.
 
 ## Use
 

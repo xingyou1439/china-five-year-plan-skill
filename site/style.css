@@ -5,3 +5,5 @@
 @media print{.topbar,.actions,.filters,.plan,.nav,.footer-links,.bookmark,.toast{display:none!important}body{background:white;color:black}.wrap{max-width:none;padding:0}.hero{display:block;padding:20px 0}.diagram{display:none}.card-grid{display:block}.teaser{break-inside:avoid;margin-bottom:15px;min-height:0}.block{break-inside:avoid}.detail{padding:0}.status{display:flex}.status div{flex:1}}
 
 .share-qr{float:right;width:130px;height:130px;margin-left:22px;background:white;padding:4px}.share-foot{min-height:155px}
+
+.case-library{margin:32px 0;border:1px solid var(--line);background:var(--paper);padding:0 24px}.case-library>summary{cursor:pointer;padding:20px 0;font-weight:600;scroll-margin-top:24px}.case-library>section:last-child{border-bottom:0}.case-library:focus-within{outline-offset:4px}@media(max-width:760px){.case-library{padding:0 16px}}

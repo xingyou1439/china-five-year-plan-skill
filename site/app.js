@@ -2,6 +2,15 @@
 (() => {
   const data = JSON.parse(document.querySelector('#guide-data').textContent);
   const cards = new Map(data.cards.map(card => [card.id, card]));
+  function revealLibrary() {
+    const hash = location.hash;
+    if (!hash) return;
+    const target = document.getElementById(hash.slice(1));
+    const library = target && (target.matches('details') ? target : target.closest('details'));
+    if (library) { library.open = true; target.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', revealLibrary);
+  revealLibrary();
   const key = 'five-year-guide-plan-v1';
   let writable = true;
   let state = {selected: [], context: '', question: '', budget: '', stop: ''};
@@ -56,6 +65,7 @@
     }
   }
   document.addEventListener('click', event => {
+    if (event.target.closest('a[href="#cases"]')) document.getElementById('cases').open = true;
     const button = event.target.closest('button'); if (!button) return;
     if (button.dataset.save) {
       const id = button.dataset.save; if (!cards.has(id)) return;
