@@ -46,8 +46,14 @@ def validate():
         parser = Links(); parser.feed(file.read_text(encoding='utf-8'))
         for value in parser.links:
             dest = urlsplit(value)
-            if dest.scheme or dest.netloc or not dest.path: continue
-            path = (file.parent / unquote(dest.path)).resolve()
+            base = urlsplit(d['reader_url'])
+            if dest.scheme or dest.netloc:
+                if (dest.scheme, dest.netloc) != (base.scheme, base.netloc): continue
+                if not dest.path.startswith(base.path): continue
+                path = (ROOT / 'site' / unquote(dest.path[len(base.path):])).resolve()
+            else:
+                path = (file.parent / unquote(dest.path)).resolve() if dest.path else file
+            if path.is_dir(): path = path / 'index.html'
             if not path.is_relative_to((ROOT / 'site').resolve()) or not path.is_file():
                 errors.append(f'{file.relative_to(ROOT)}: missing local resource {value}')
     spec = importlib.util.spec_from_file_location('reader', ROOT / 'scripts/build_reader.py')
@@ -57,6 +63,10 @@ def validate():
                                (ROOT/'site/cards'/f'share-{c["id"]}.html', builder.share(c)),
                                (ROOT/'guide'/f'card-{c["id"]}.md', builder.markdown(c))]:
             if path.read_text(encoding='utf-8') != expected: errors.append(f'{path.relative_to(ROOT)}: stale generated content')
+    for path, expected in [(ROOT/'site/en/index.html', builder.english()),
+                           (ROOT/'site/sitemap.xml', builder.sitemap())]:
+        if path.read_text(encoding='utf-8') != expected:
+            errors.append(f'{path.relative_to(ROOT)}: stale generated content')
     return errors
 
 

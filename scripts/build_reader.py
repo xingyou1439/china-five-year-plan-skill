@@ -2,6 +2,8 @@
 """Build the static reader and Markdown cards from reviewed guide data."""
 import html
 import json
+import re
+from urllib.parse import urljoin
 from xml.etree import ElementTree as ET
 from pathlib import Path
 
@@ -30,7 +32,7 @@ def sitemap():
     ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
     ET.register_namespace('', ns)
     doc = ET.Element(f'{{{ns}}}urlset')
-    for url in [BASE] + [BASE + 'cards/' + c['slug'] + '.html' for c in DATA['cards']]:
+    for url in [BASE, BASE + 'en/'] + [BASE + 'cards/' + c['slug'] + '.html' for c in DATA['cards']]:
         ET.SubElement(ET.SubElement(doc, f'{{{ns}}}url'), f'{{{ns}}}loc').text = url
     return ET.tostring(doc, encoding='unicode', xml_declaration=True) + '\n'
 
@@ -60,20 +62,22 @@ def source_html(card):
     return ''.join(parts)
 
 
-def shell(title, description, body, prefix='', canonical='', script=True):
+def shell(title, description, body, prefix='', canonical='', script=True, lang='zh-CN', alternates=False):
     safe_data = json.dumps(DATA, ensure_ascii=False).replace('<', '\\u003c')
     scripts = f'<script id="guide-data" type="application/json">{safe_data}</script><script src="{prefix}app.js" defer></script>' if script else ''
+    language_links = ''.join(f'<link rel="alternate" hreflang="{code}" href="{url}">' for code, url in [('zh-CN', BASE), ('en', BASE+'en/'), ('x-default', BASE+'en/')]) if alternates else ''
+    locale = 'en_US' if lang == 'en' else 'zh_CN'
     return f'''<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)}</title><meta name="description" content="{e(description)}"><meta name="theme-color" content="#254d3c"><link rel="canonical" href="{canonical or BASE}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}"><meta property="og:type" content="article"><meta property="og:url" content="{canonical or BASE}"><meta property="og:locale" content="zh_CN"><link rel="stylesheet" href="{prefix}style.css"></head>
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)}</title><meta name="description" content="{e(description)}"><meta name="theme-color" content="#254d3c"><link rel="canonical" href="{canonical or BASE}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}"><meta property="og:type" content="article"><meta property="og:url" content="{canonical or BASE}"><meta property="og:locale" content="{locale}">{language_links}<link rel="stylesheet" href="{prefix}style.css"></head>
 <body>{body}{scripts}<div id="toast" class="toast" role="status" hidden></div></body></html>'''
 
 
 def header(prefix=''):
-    return f'<div class="wrap"><header class="topbar"><a class="brand" href="{BASE}"><span class="mark">五</span>十五五 · 决策参考</a><nav class="nav" aria-label="主导航"><a href="{BASE}#cases">读案例</a><a href="{BASE}#downloads">下载</a><a class="desktop" href="{REPO}" target="_blank" rel="noopener">GitHub 开源资料 ↗</a></nav></header></div>'
+    return f'<div class="wrap"><header class="topbar"><a class="brand" href="{BASE}"><span class="mark">五</span>十五五 · 决策参考</a><nav class="nav" aria-label="主导航"><a href="{BASE}en/" lang="en" hreflang="en">English</a><a href="{BASE}#cases">读案例</a><a href="{BASE}#downloads">下载</a><a class="desktop" href="{REPO}" target="_blank" rel="noopener">GitHub 开源资料 ↗</a></nav></header></div>'
 
 
 def footer(prefix=''):
-    return f'<div class="wrap"><footer class="footer"><p>独立开源项目 · xingyou1439 · MIT<br>v{DATA["version"]} · 内容核验 {DATA["reviewed"]}<br>5个构造场景，商业需求与个人适配待验证。</p><div class="footer-links"><a href="{REPO}/blob/codex/initial-release/SOURCE_NOTICE.md">来源说明</a><a href="{REPO}/issues/new?template=guide-feedback.yml">反馈与纠错</a><a href="{REPO}/blob/codex/initial-release/README.en.md">English</a></div></footer></div>'
+    return f'<div class="wrap"><footer class="footer"><p>独立开源项目 · xingyou1439 · MIT<br>v{DATA["version"]} · 内容核验 {DATA["reviewed"]}<br>5个构造场景，商业需求与个人适配待验证。</p><div class="footer-links"><a href="{REPO}/blob/codex/initial-release/SOURCE_NOTICE.md">来源说明</a><a href="{REPO}/issues/new?template=guide-feedback.yml">反馈与纠错</a><a href="{BASE}en/" lang="en" hreflang="en">English overview</a></div></footer></div>'
 
 
 def detail(card):
@@ -113,6 +117,63 @@ def share(card):
     return shell(card['title'],card['lead'],body,'../',BASE+'cards/'+card['slug']+'.html',False)
 
 
+def english_markdown(text):
+    """Render the README subset; resolve repo-relative links from the web page."""
+    def inline(value):
+        value = e(value)
+        def link(match):
+            label, target = match.groups()
+            if not target.startswith(('https://', '#')):
+                target = urljoin(REPO + '/blob/codex/initial-release/', target)
+            return f'<a href="{target}">{label}</a>'
+        value = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', link, value)
+        value = re.sub(r'`([^`]+)`', r'<code>\1</code>', value)
+        return re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', value)
+    blocks, paragraph, items, code = [], [], [], None
+    def flush():
+        if paragraph:
+            blocks.append('<p>' + inline(' '.join(paragraph)) + '</p>'); paragraph.clear()
+        if items:
+            blocks.append('<ul>' + ''.join('<li>'+inline(x)+'</li>' for x in items) + '</ul>'); items.clear()
+    for line in text.splitlines():
+        if line.startswith('```'):
+            flush()
+            if code is None: code = []
+            else:
+                blocks.append('<pre class="prompt">'+e('\n'.join(code))+'</pre>'); code = None
+        elif code is not None: code.append(line)
+        elif line.startswith('#'):
+            flush()
+            level = min(len(line)-len(line.lstrip('#')), 3)
+            title = line.lstrip('# ').strip()
+            anchor = re.sub(r'[^a-z0-9 -]', '', title.lower()).replace(' ', '-')
+            blocks.append(f'<h{level} id="{anchor}">{inline(title)}</h{level}>')
+        elif line.startswith('- '):
+            if paragraph: flush()
+            items.append(line[2:])
+        elif not line.strip(): flush()
+        else: paragraph.append(line)
+    flush()
+    return '\n'.join(blocks)
+
+
+def english():
+    readme = (ROOT/'README.en.md').read_text(encoding='utf-8')
+    # The README is the maintained English product explanation and install guide.
+    content = english_markdown(readme)
+    names = ['Manufacturing AI', 'Robotics services', 'Eldercare: who pays?',
+             'From policy to an order', 'Transferring existing skills']
+    cards = ''.join(f'<li><a href="{BASE}cards/{c["slug"]}.html" hreflang="zh-CN">{e(name)} — Chinese only</a></li>' for c, name in zip(DATA['cards'], names))
+    body = f'''<div class="wrap"><header class="topbar"><a class="brand" href="{BASE}en/">China Five-Year Plan Skill</a><nav class="nav" aria-label="Main navigation"><a href="#use">Install</a><a href="#reading">Read</a><a href="{BASE}" lang="zh-CN" hreflang="zh-CN">中文</a></nav></header></div>
+<main class="wrap detail"><p class="eyebrow">Independent · Open source · Bilingual AI analysis</p>{content}
+<section id="reading"><h2>Public reading and language status</h2><p>This overview and the Skill support English. The five decision scenarios, PDF guide and sharing images are currently in Chinese only. These are constructed examples, not verified customer cases. Their English labels below describe topics; full English card translations are not yet available.</p><ul>{cards}</ul><p><a href="{BASE}" hreflang="zh-CN">Browse the Chinese guide</a></p></section>
+<section id="sources"><h2>Policy sources and verification</h2><p><a href="{DATA['source_url']}">15th Five-Year Plan outline — official Chinese source</a>. Consult the <a href="{REPO}/blob/codex/initial-release/references/source-catalogue.json">source catalogue</a> and <a href="{REPO}/blob/codex/initial-release/SOURCE_NOTICE.md">source notice</a> for provenance. Primary Chinese text is authoritative; English explanations are not official translations. Check current primary sources for the specific location, entity and activity before acting.</p></section></main>
+<div class="wrap"><footer class="footer"><p>Independent open-source project · xingyou1439 · MIT<br>Skill v{DATA['version']} · Guide evidence reviewed {DATA['reviewed']}</p><div class="footer-links"><a href="{REPO}">GitHub</a><a href="{BASE}" lang="zh-CN" hreflang="zh-CN">中文</a></div></footer></div>'''
+    return shell("China’s 15th Five-Year Plan Skill | English overview & installation",
+                 "An independent bilingual AI skill for China policy research, career and venture decisions, and market entry. Explore sources, limitations and installation.",
+                 body, '../', BASE+'en/', False, lang='en', alternates=True)
+
+
 def main():
     site=ROOT/'site'
     teasers=''
@@ -127,7 +188,9 @@ def main():
 <section><div class="section-head"><div><div class="eyebrow">02 / 读懂判断</div><h2>十五五规划解读，怎样接到个人选择？</h2></div></div><p class="intro">十五五规划对应2026—2030年。先查原文支持的具体任务，再追踪实施文件和目标客户。准备转行时，核实岗位要求与已有能力；准备创业时，核实需求、付款方与交付条件。用一个小试验补上证据缺口，再决定投入。</p><div class="method"><div><div class="method-number">01</div><h3>政策到底说了什么</h3><p>用书名、章节和原文链接说明依据。补充文件保留影响判断的日期、地区和适用范围。</p></div><div><div class="method-number">02</div><h3>哪些仍然是假设</h3><p>服务设想和行动建议还需要实际验证。先核实付款、采购条件和你的交付能力。</p></div><div><div class="method-number">03</div><h3>先验证，再扩大投入</h3><p>设一个两周能完成的小动作，同时写下继续与停止条件。周期和数量是建议值。</p></div></div></section>
 <section id="plan"><div class="plan"><div class="plan-head"><div><div class="eyebrow">03 / 带走下一步</div><h2>我的两周验证清单</h2></div><span class="tiny">保存在当前浏览器，可下载留存</span></div><p id="plan-empty">从上方选择一张卡，先验证一个问题。这里的记录不会上传到服务器。</p><ul class="selected-list" id="selected-list"></ul><div class="form-grid"><label>我的城市与已有能力<input id="context" placeholder="例如：广州，有企业培训经验" maxlength="240"></label><label>这次最想查清的问题<input id="question" placeholder="例如：谁会采购一项询盘整理服务？" maxlength="240"></label><label>我愿意投入的时间与预算<textarea id="budget" placeholder="写一个能承受的试验上限" maxlength="500"></textarea></label><label>什么时候停止或调整<textarea id="stop" placeholder="例如：两周后仍找不到任务负责人，就换场景" maxlength="500"></textarea></label></div><div class="actions"><button class="btn" id="export-plan">下载我的验证清单 ↓</button><button class="btn secondary" id="clear-plan">清空本机记录</button></div><p class="tiny" id="storage-note">记录仅存当前浏览器。换设备或清理浏览器后可能丢失，请下载留存。</p></div></section>
 <section id="downloads"><div class="section-head"><div><div class="eyebrow">04 / 继续使用</div><h2>先阅读，再带入你的情况。</h2></div><p>公开内容可按 MIT 许可转载、改编，保留作者、来源和版本日期。</p></div><div class="download-row"><div class="download-block"><h3>短版指南与分享图</h3><p>5张决策卡、判断方法、验证工作纸与官方出处。适合发给正在考虑转型或小生意的朋友。</p><a class="btn" href="{RELEASE}five-year-guide-v0.2.1.pdf">下载 PDF ↗</a><br><a href="{REPO}/releases/tag/v0.2.1">下载分享图与发布包 →</a></div><div class="download-block"><h3>用 AI 分析自己的选择</h3><p>完整 Skill 保留十三五至十五五对照，以及国内决策、Understanding China 和市场进入路径。</p><a class="btn secondary" href="{REPO}#安装与使用">GitHub：安装十五五 AI Skill ↗</a><br><a href="{REPO}/issues/new?template=guide-feedback.yml">反馈：它改变了你的哪个判断？ →</a></div></div></section></main>{footer()}'''
-    (site/'index.html').write_text(shell(DATA['seo_title'],DATA['seo_description'],body),encoding='utf-8')
+    (site/'index.html').write_text(shell(DATA['seo_title'],DATA['seo_description'],body, alternates=True),encoding='utf-8')
+    (site/'en').mkdir(exist_ok=True)
+    (site/'en/index.html').write_text(english(), encoding='utf-8')
     (site/'.nojekyll').write_text('')
     (site/'sitemap.xml').write_text(sitemap(), encoding='utf-8')
     lines=['# 十五五规划解读与职业创业决策卡','','基于十五五规划的职业与小生意决策参考。v0.2.1，核验日期2026-10-18。','','先选一个与你有关的问题，读依据、付款方与验证动作，再决定是否扩大投入。以下均为构造场景；商业需求和个人适配待验证。','']

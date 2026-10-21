@@ -8,13 +8,13 @@
     },
     {
       "path": ".github/workflows/pages.yml",
-      "sha256": "f1561b0db011cfa4f093088d41630b615100e32a7a94070a5c5210425a7a7f45",
-      "bytes": 947
+      "sha256": "1217f8b4083f1d3674736cd868d8733589983885f4c2a139fedc965bf9158b33",
+      "bytes": 1103
     },
     {
       "path": ".github/workflows/validate.yml",
-      "sha256": "36995cb32f451e5938770c0645e837d615e37faf97ebc44d241be7dfcaf32417",
-      "bytes": 732
+      "sha256": "8f7c0f4059c2c5a891962aa3b109211a32c544219337e106b8ec292b25e99fb1",
+      "bytes": 888
     },
     {
       "path": ".gitignore",
@@ -33,8 +33,8 @@
     },
     {
       "path": "README.en.md",
-      "sha256": "399f5705294bca97f52af5dcd139ca65f660dbfcf8ddb37250142f9313b11beb",
-      "bytes": 7332
+      "sha256": "7b7b93ca9f632c7b0157f1153e7032e604fd2c04696b53f221aff73328bc701a",
+      "bytes": 7420
     },
     {
       "path": "README.md",
@@ -188,8 +188,8 @@
     },
     {
       "path": "scripts/build_reader.py",
-      "sha256": "0e2e99751f4b72e774e3968069ac21857fcf2525ce7daae2a32257be19e861b2",
-      "bytes": 18952
+      "sha256": "3e89deabb93df0b713c329d235e092d1ae13a8338ce85de211b6cc573edff643",
+      "bytes": 23845
     },
     {
       "path": "scripts/search_evidence.py",
@@ -203,13 +203,13 @@
     },
     {
       "path": "scripts/verify_guide.py",
-      "sha256": "c144bce045509005bca9ce3527533fd3d7cc09ceeaca150f20c7e0b8d8c5e347",
-      "bytes": 3617
+      "sha256": "cc68c764dd348b9da37067ea9ac306bb19b5a4a5f7f5ad02c59406e1b1f22629",
+      "bytes": 4262
     },
     {
       "path": "scripts/verify_publication.py",
-      "sha256": "35d41f57bde631e215a80b8c47623de96438aae3376cf1963a0aa06c80495b11",
-      "bytes": 6990
+      "sha256": "3402d5c479cd7286aef9055fef8229105a36c9dd0850bcb30d21102cac6db265",
+      "bytes": 7052
     },
     {
       "path": "site/.nojekyll",
@@ -223,18 +223,18 @@
     },
     {
       "path": "site/cards/eldercare-payer.html",
-      "sha256": "b3979111fe9273bc51f993899ce2e6bbc2e32a11df1efb93f88ee704f42071dc",
-      "bytes": 26689
+      "sha256": "2cf19ee73b41386108a812ebe5b11099f4cabdf50bceb471269f2d71c108a1cf",
+      "bytes": 26791
     },
     {
       "path": "site/cards/manufacturing-ai.html",
-      "sha256": "4aed6c816329fa45f917698afbf061403114525c1376b349a983609c6f084e33",
-      "bytes": 27520
+      "sha256": "92c9d6b4d3a367f7ecb576d8074d4d7ff984fd03bd8b28bb4ac794f8d81f6c3c",
+      "bytes": 27622
     },
     {
       "path": "site/cards/policy-to-order.html",
-      "sha256": "e803d692ec99166a4df1bdfca0d4fd66cf387e2a7d33b3293c529f5e007558e7",
-      "bytes": 26088
+      "sha256": "11ee60d85f69569aa3839b7f779b62ba29206541eadf938214361d9eb699d73f",
+      "bytes": 26190
     },
     {
       "path": "site/cards/qr-01.svg",
@@ -263,8 +263,8 @@
     },
     {
       "path": "site/cards/robotics-services.html",
-      "sha256": "d0993cc2839eb084d4340af067e08118eb046c0b1a13044030a33e4563eca5b9",
-      "bytes": 27002
+      "sha256": "746afbe459a6c22c2b88c144c8302b7032d1f0662b26b76ca5c6e3e5deb95361",
+      "bytes": 27104
     },
     {
       "path": "site/cards/share-01.html",
@@ -293,8 +293,13 @@
     },
     {
       "path": "site/cards/skills-transfer.html",
-      "sha256": "51225364f7a0b22b5e9b0fac62e7c4a27e53c37f76db6f72ce243b7a30d15f3b",
-      "bytes": 26897
+      "sha256": "b021b25d19d3b3ddb8b3a45bd545a42e1d8b4e755af157d5cb8f4bd4d23f4e4a",
+      "bytes": 26999
+    },
+    {
+      "path": "site/en/index.html",
+      "sha256": "0bdf085da89a41bf365b79787d9d5e7c74f6f641fee4601abc8d2c7cfdc598c0",
+      "bytes": 13264
     },
     {
       "path": "site/googlee7f968b7a3579e7a.html",
@@ -303,18 +308,18 @@
     },
     {
       "path": "site/index.html",
-      "sha256": "af19d54569f66fbfcbcdf823b401f2417a0490cea73a146084e0c6fc6143a2fe",
-      "bytes": 29691
+      "sha256": "6fbaf4fb57dd830c88568d696ed708d00304267941ddf6871bb23d48a7e31d6a",
+      "bytes": 30112
     },
     {
       "path": "site/sitemap.xml",
-      "sha256": "93f8fcd5a1c625fc00969a6b97e6396f7cf8cffe38fb5dc12de36532a3b0bf4e",
-      "bytes": 716
+      "sha256": "aebffb014807cbe58c5d7f95be2cea90c74038eaa61808ceeb2201bc55113cc0",
+      "bytes": 798
     },
     {
       "path": "site/style.css",
-      "sha256": "8f32d8f7b66e3430bad5a890988af2b9d3fd6cd9a3ff54fd7816b2d524a6b56a",
-      "bytes": 10058
+      "sha256": "00bb12b9ab1b71a7bda22120142874db3894c1b3434e31b7a1c90722aac739dc",
+      "bytes": 10268
     },
     {
       "path": "tests/behavioral-cases.md",
@@ -335,6 +340,11 @@
       "path": "tests/test_reader_citations.py",
       "sha256": "bb87cc9d11cb1b6e9751bb35a6174f8ffb053cb2ee47ada0e3c3585f71b4b834",
       "bytes": 3265
+    },
+    {
+      "path": "tests/test_reader_english.py",
+      "sha256": "bf882671eb1dbdf9ffdf65a32c46a890d8fe8f6d5a826de5df88108f49cd9e00",
+      "bytes": 3153
     }
   ]
 }

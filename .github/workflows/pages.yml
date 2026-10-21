@@ -23,6 +23,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Build reader and check committed output
+        run: |
+          python3 scripts/build_reader.py
+          git diff --exit-code -- site guide
       - name: Verify publication and guide evidence
         run: |
           python3 scripts/verify_publication.py
