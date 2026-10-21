@@ -32,6 +32,8 @@ PUBLIC_FILES = frozenset({
     'scripts/verify_guide.py',
     'tests/test_reader_citations.py',
     'site/index.html',
+    'site/en/index.html',
+    'tests/test_reader_english.py',
     'site/style.css',
     'site/app.js',
     'site/.nojekyll',

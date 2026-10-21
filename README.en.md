@@ -1,6 +1,6 @@
 # China's 15th Five-Year Plan (2026–2030): Policy Analysis and Decision Reference
 
-[Chinese public guide and five decision scenarios](https://xingyou1439.github.io/china-five-year-plan-skill/) · [Guide sources](guide/cards.json)
+[English reading page](https://xingyou1439.github.io/china-five-year-plan-skill/en/) · [Chinese public guide and five decision scenarios](https://xingyou1439.github.io/china-five-year-plan-skill/) · [Guide sources](guide/cards.json)
 
 The public guide uses constructed scenarios and separates policy evidence from unvalidated roles, customer demand and experiments. Four additional official documents were checked on 2026-10-18; this is not a comprehensive refresh of the underlying corpus. The original three English/Chinese task paths remain available.
 

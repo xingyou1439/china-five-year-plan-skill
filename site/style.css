@@ -5,3 +5,5 @@
 @media print{.topbar,.actions,.filters,.plan,.nav,.footer-links,.bookmark,.toast{display:none!important}body{background:white;color:black}.wrap{max-width:none;padding:0}.hero{display:block;padding:20px 0}.diagram{display:none}.card-grid{display:block}.teaser{break-inside:avoid;margin-bottom:15px;min-height:0}.block{break-inside:avoid}.detail{padding:0}.status{display:flex}.status div{flex:1}}
 
 .share-qr{float:right;width:130px;height:130px;margin-left:22px;background:white;padding:4px}.share-foot{min-height:155px}
+
+html[lang="en"] .detail{overflow-wrap:anywhere}html[lang="en"] .topbar{flex-wrap:wrap}html[lang="en"] .nav{flex-wrap:wrap}html[lang="en"] pre{overflow-wrap:anywhere}html[lang="en"] h1{font-family:var(--sans)}
