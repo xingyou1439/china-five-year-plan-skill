@@ -62,13 +62,13 @@ def main():
 
     add('2026 → 2030  /  十五五与个人选择','label')
     story.append(Spacer(1,43))
-    add('未来五年，\n普通人的机会\n与避坑指南','cover')
-    add('基于十五五规划的\n职业与小生意决策参考','deck')
+    add('十五五规划\n职业与创业\n决策指南','cover')
+    add('看懂国家的发展方向，\n想清楚自己的下一步。','deck')
     story.append(Spacer(1,20))
     callout('读完，先查清一个问题','我可以服务谁？交付哪项任务？谁愿意付款？下一步用什么小实验验证？')
     add('5个具体场景 · 政策出处 · 参与门槛 · 两周行动','body')
     story.append(Spacer(1,25))
-    add('作者 xingyou1439  /  v0.2.1  /  内容核验 2026-10-18','small')
+    add('作者 xingyou1439  /  v0.3.0  /  内容核验 2026-10-18','small')
     add('以下采用假设案例。你可以参考思路，但还需要结合自己的能力、客户需求和当地规则判断。','small')
     link('打开手机阅读版与后续更新',DATA['reader_url'])
 
@@ -84,6 +84,20 @@ def main():
         ('验证与停止','两周内先查清什么？什么结果支持继续，什么结果让你停下？')]:
         heading(title);add(text)
     add('规划引文用于说明政策方向。卡片中的服务设想、试验人数和时间是作者建议，可按实际资源调整；客户是否采购、你能否参与，需要分别核实。','small')
+
+    page('用 Skill 分析自己的问题','一句话开始，带走一张选择单。')
+    add('安装完整 Skill 后，在助手里说：“我现在做____，最近想弄清楚____。” 不用先填完整问卷。')
+    heading('先选你想做的事')
+    add('看懂一个方向：解释术语、了解规划变化。比较两个选择：结合已有经验评估不同路径。安排下一步：把方向变成一个可核实的小行动。')
+    heading('先得到简短回答')
+    add('当前判断、相关依据、最该查清的事、今天的一步。只补问会改变判断的信息；简单解释不要求预算。复杂条件与来源日期仍要保留。')
+    heading('按需保存与分享')
+    add('请助手整理“我的职业与创业选择单”，保存选项、判断、来源、最大未知、找谁问什么和复盘条件。完整记录私人留存；想截图分享时，再要求去除个人与商业细节，自行复核后决定是否发布。')
+    heading('带着新信息回来')
+    add('把上次的选择单贴回助手，加上“新了解到____，来源和时间是____，请重新判断”。新访谈是反馈，不自动等于订单；助手需要说明哪些结论应更新。')
+    link('完整演示：品牌营销经验怎样用于AI学习', DATA['reader_url']+'first-session.html')
+    link('安装与开始提问', DATA['repository']+'#安装与使用')
+    add('网页提供本地提问模板，不在网页内调用模型。构造演示不能视为真实客户结果。','small')
 
     for c in DATA['cards']:
         titles = {'01': '给制造企业做 AI，\n先培训、实施，还是做软件？', '03': '想做养老业务，\n老人、子女、机构，谁会付钱？', '05': '已有营销、设计或培训经验，\n怎样参与新方向？'}
@@ -144,7 +158,7 @@ def main():
         link('查看原文 · '+s['host'],s['url'])
     heading('复用与更新')
     add('项目按MIT许可开放。转载与改编时保留作者和许可声明，建议保留卡片编号、来源、核验日期与适用边界。新增地区规则、客户案例与市场数字另列来源。','small')
-    add('v0.2.1改进引用和读者表达。公众阅读页包含5张示例决策卡和4条补充官方依据。原Skill的三期规划语料与跨期比较保留；本次补查不代表已全面更新所有行业与地方规则。','small')
+    add('v0.3.0增加提问入口、选择单与复盘演示。公众阅读页包含5张示例决策卡和4条补充官方依据。原Skill的三期规划语料与跨期比较保留；本次补查不代表已全面更新所有行业与地方规则。','small')
     link('原始内容、Skill安装与纠错',DATA['repository'])
 
     args.output.parent.mkdir(parents=True,exist_ok=True)
@@ -154,7 +168,7 @@ def main():
         canvas.setFillColor(PAPER);canvas.rect(0,0,w,h,fill=1,stroke=0)
         canvas.setStrokeColor(colors.HexColor('#d9ded2'));canvas.line(48,40,w-48,40)
         canvas.setFont('GuideCJK',8);canvas.setFillColor(MUTED)
-        canvas.drawString(48,25,'未来五年 · 机会与避坑指南  |  v0.2.1  |  2026-10-18')
+        canvas.drawString(48,25,'未来五年 · 机会与避坑指南  |  v0.3.0  |  2026-10-18')
         canvas.drawRightString(w-48,25,str(doc.page))
         canvas.restoreState()
     doc=SimpleDocTemplate(str(args.output),pagesize=(595.276,841.89),rightMargin=48,leftMargin=48,topMargin=46,bottomMargin=57,title=DATA['title'],author=DATA['author'],subject=DATA['subtitle'],pageCompression=1)

@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.3.0",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/guide-feedback.yml",
@@ -28,23 +28,23 @@
     },
     {
       "path": "PUBLICATION_SECURITY.md",
-      "sha256": "48b0e3db5200636d0f59721d0f448aeeaf90212a83c28f3694803e0ce04d497e",
-      "bytes": 3323
+      "sha256": "af7d7ead628730ffeb065a321d918edef6b91033478b55ca905b93fb8c4ab642",
+      "bytes": 3785
     },
     {
       "path": "README.en.md",
-      "sha256": "204d82e27033d300a0477c6105bcc4e3477cc41f2a9c5080b043e943abdaa94f",
-      "bytes": 7215
+      "sha256": "705ea5d2ac9396226d63f0df1cc362a1f1d9c1802cda9c725aab67247c38407a",
+      "bytes": 8067
     },
     {
       "path": "README.md",
-      "sha256": "095c4d4474893cc519b3d96b6bb89f082db05811a0b74a29f3c6ab807cf7379d",
-      "bytes": 10446
+      "sha256": "626d39798f0f21cdc5bb5a736be98ed6b50e5030f48c2f0bfaec34dd9fd18437",
+      "bytes": 12053
     },
     {
       "path": "SKILL.md",
-      "sha256": "20a9334dfcfbfd1aa260233f27d3f967bcbd8fa19ee1ae934469bb460d2b93e9",
-      "bytes": 9300
+      "sha256": "40aa59278035b06cf6e8f65cec2205bfc635667187b75637073b1715fa6d4bc7",
+      "bytes": 12238
     },
     {
       "path": "SOURCE_NOTICE.md",
@@ -53,13 +53,18 @@
     },
     {
       "path": "agents/openai.yaml",
-      "sha256": "cae9d90ac06dbe10ddc8252d07369e4662ef8b0c91c1528832ff5e497c6ac49b",
-      "bytes": 361
+      "sha256": "fa0ca7436dfcba06a03b11404d1e5c8f1071e6c924b718079698dde8241bd34c",
+      "bytes": 367
     },
     {
       "path": "examples/domestic.md",
       "sha256": "018df5c03a9f06a95a90b33aa1799ed9ef8fe66af93a6f162a2779b951e3711f",
       "bytes": 1483
+    },
+    {
+      "path": "examples/first-session.md",
+      "sha256": "4032fe34e1894fb247932416dcca973fbef5e239ceab56240e854fffe76e8733",
+      "bytes": 6024
     },
     {
       "path": "examples/market-entry.md",
@@ -78,37 +83,37 @@
     },
     {
       "path": "guide/README.md",
-      "sha256": "87059b2ca4d94269cb30e393766a14009d7070f6aa18c84ee848237363bddc24",
+      "sha256": "c4e5b3861884122db94580d707ed4da7908cc520e670422c0ddd3d9b1640fbf0",
       "bytes": 1818
     },
     {
       "path": "guide/card-01.md",
-      "sha256": "67f9f57c43145f7faa4a42fd9c4327faa540453a4c1f753e6a6be52905051523",
+      "sha256": "40d37cb0c287a03f63985134b1253bfebc7bd4ec9aa3809f26a042d2f86b12b4",
       "bytes": 4721
     },
     {
       "path": "guide/card-02.md",
-      "sha256": "f8a65a9e01eca3657641ea6b43b588e3c0de31ebfba4734fa252ed298490eb21",
+      "sha256": "8ce66ea15f3dfa37352f6c974fe4922c68ee6d3b25829940326d082d9baa8092",
       "bytes": 4368
     },
     {
       "path": "guide/card-03.md",
-      "sha256": "759d4c78e33fd2cca9a63ae41718348c0c972aa9713b20050270d3f02480c7d4",
+      "sha256": "a77d6ef800ddb908aaf5d3fad9b7895eed7626b4f3406e9f0c82a247fcc35260",
       "bytes": 4225
     },
     {
       "path": "guide/card-04.md",
-      "sha256": "cec6557f7947644425b92999e03e2f491a805a1de9543203424879e8d331849e",
+      "sha256": "f248352f4f0451aefc0af1b0d0f3f789dfe3787f3a8a70cf21878c31f16f5c50",
       "bytes": 3717
     },
     {
       "path": "guide/card-05.md",
-      "sha256": "e02ce5e0e12f9a65624a16a50b1b21704021f42e01e3c535f22b4c76e6a0bc1d",
+      "sha256": "d734879e6c0244292cc9f3872cf24e75538419c29b8d5dc872720048292f3a1b",
       "bytes": 4265
     },
     {
       "path": "guide/cards.json",
-      "sha256": "e4cb6962451868c43a5438be2b091bb52002c055e1c0484e9abb70c533964722",
+      "sha256": "2f6f6b73b21c0a17edfdc81f0e405aa395ef0825799f65357891cee3be9a292f",
       "bytes": 19655
     },
     {
@@ -125,6 +130,11 @@
       "path": "launch/reader-test-template.csv",
       "sha256": "cc7da1eb1125fc6a745c5faa534bb45768d26e976bc9a81eff914eeda138322f",
       "bytes": 862
+    },
+    {
+      "path": "launch/v0.3-launch.md",
+      "sha256": "8132ba3610888332dd4709ab61a81914c0ab16cae331fc90bf974a06285bb7f0",
+      "bytes": 4088
     },
     {
       "path": "references/china-context.md",
@@ -150,6 +160,11 @@
       "path": "references/decision-method.md",
       "sha256": "0244b6d1a5c608e02372d4767535c55c0e38eb9fbcee3d0cdf0dfbca55a859b1",
       "bytes": 3978
+    },
+    {
+      "path": "references/decision-note.md",
+      "sha256": "97e973b6db3bc97d1a9deab04d2fb085dc4a2d1ae1e3159de99911fd6a08e62c",
+      "bytes": 1984
     },
     {
       "path": "references/industry-entry-map.md",
@@ -178,8 +193,8 @@
     },
     {
       "path": "scripts/build_pdf.py",
-      "sha256": "9c405b214dfb7bf603b65c422689fa5c2abee9a8996d1e1d89326ebc1ef4c074",
-      "bytes": 10959
+      "sha256": "d6b5f69aa5a1702c1ed6b6965b5fa622ab7b2ec7b5fea64f3f30dd43e5f40494",
+      "bytes": 12516
     },
     {
       "path": "scripts/build_qr.py",
@@ -188,8 +203,8 @@
     },
     {
       "path": "scripts/build_reader.py",
-      "sha256": "b6467051d3f649b86713bf90f4fe3de049ae54a4ee8be9a99720000502a593bd",
-      "bytes": 19459
+      "sha256": "a08f65fec4a8e8d8dbf8157a58a82d19a6b1e877d7ffb2ad070b34bd5a252211",
+      "bytes": 23529
     },
     {
       "path": "scripts/search_evidence.py",
@@ -203,13 +218,13 @@
     },
     {
       "path": "scripts/verify_guide.py",
-      "sha256": "c144bce045509005bca9ce3527533fd3d7cc09ceeaca150f20c7e0b8d8c5e347",
-      "bytes": 3617
+      "sha256": "ee5df1a948b931d88d51de7646a5b8740b27a413830968ee7ea102af35143eac",
+      "bytes": 3789
     },
     {
       "path": "scripts/verify_publication.py",
-      "sha256": "35d41f57bde631e215a80b8c47623de96438aae3376cf1963a0aa06c80495b11",
-      "bytes": 6990
+      "sha256": "1f54d35a2377f03090ca6f7e042f6c1043b4eea3403984d19da7dd952882d963",
+      "bytes": 7170
     },
     {
       "path": "site/.nojekyll",
@@ -218,22 +233,22 @@
     },
     {
       "path": "site/app.js",
-      "sha256": "f2aa16cd4abbc863c6cff54edee8e7e51b39dab07d305e0626058c2a91715357",
-      "bytes": 6352
+      "sha256": "269cb0d4e9a0cd07c0e52affd68c03cb4b324311c8919242a85ffe0c6428e81e",
+      "bytes": 8406
     },
     {
       "path": "site/cards/eldercare-payer.html",
-      "sha256": "1e8428518e9ba0a2f20cce6d1f768b5c587792058bd9e2c1a17e7a4b3ac3fe9c",
+      "sha256": "70ef248a445d77c950d42e5ad5fb5f4fa653b2134879153035df24ccbc2cc213",
       "bytes": 26694
     },
     {
       "path": "site/cards/manufacturing-ai.html",
-      "sha256": "8450a03a6e5982f1870cde2047c6a48a24577d57565b8765b2f5358b40c6143e",
+      "sha256": "5b600327d2ca2aa37c9814ece6219a4e416caf5a6aeeddb3539819fab1948d9a",
       "bytes": 27525
     },
     {
       "path": "site/cards/policy-to-order.html",
-      "sha256": "359196512b4734e72a05a1517a3b7adb90ff7f55a4847581d3747c3823b0a3e4",
+      "sha256": "903c4f7da4ddfd28f3b250f96de401974462ce009d9195385dbbe31f73cfc025",
       "bytes": 26093
     },
     {
@@ -263,38 +278,43 @@
     },
     {
       "path": "site/cards/robotics-services.html",
-      "sha256": "c04e2267c13581454cdb076a7bbaf7c088fb2c91734cc9c674e1144882e89160",
+      "sha256": "f01146896e5b2d240a6d464c4426f96187e4461015da76a0e11b52956977b03d",
       "bytes": 27007
     },
     {
       "path": "site/cards/share-01.html",
-      "sha256": "23fd57465dc365786ab65f0f5990737944fe5ed9e5c28ffe28833ee3292bb024",
+      "sha256": "eb67f6a54d31f8bd83106e4dc5a235da1bead1d8025341a9d640567edb6915e2",
       "bytes": 2693
     },
     {
       "path": "site/cards/share-02.html",
-      "sha256": "47ce1112344e7afe8293949f432960b87cde7d48def3354d303b0d86e5a75570",
+      "sha256": "045cc9f052606a449fe3aa8e3905821d955344446390c21e3910b123d3333e88",
       "bytes": 2716
     },
     {
       "path": "site/cards/share-03.html",
-      "sha256": "2786140573e800fc9253090a632a5cb9ba49d05b9724674a9392aa743c91dde7",
+      "sha256": "74c51000d4f9ee48382b0a8baf93be6e545d0c442f7ae5a5d9b03a838a25f665",
       "bytes": 2588
     },
     {
       "path": "site/cards/share-04.html",
-      "sha256": "74003ec8e2c35a49de0748163631ccc0e8ad3c68806261406a4a8eebc5f524b2",
+      "sha256": "377db1ee539314ab452abe7474857a5e386ddcda11f8b1779efd9330b518e59a",
       "bytes": 2661
     },
     {
       "path": "site/cards/share-05.html",
-      "sha256": "1d4300d7d78e4254d62e302e42582e775310f8d8f953aeb36ffa6ad90685ea1b",
+      "sha256": "7a0a01a3f6a347b1ac684b3b9d51062327eaf5e0230230c0448ded8ffe2c17f9",
       "bytes": 2675
     },
     {
       "path": "site/cards/skills-transfer.html",
-      "sha256": "bfd1452654aad2acaa3c6590a38091ba52cb887dd7a181d0db3057befa6c75bd",
+      "sha256": "2e7d48cac3a628f33fa9a4d79f659dddc0f7b710df221143728895bc8c32a660",
       "bytes": 26902
+    },
+    {
+      "path": "site/first-session.html",
+      "sha256": "93afe3d6b8a760ad3b0263a3aba237e7439aed2e32477d331e00509b2b079ee0",
+      "bytes": 26832
     },
     {
       "path": "site/googlee7f968b7a3579e7a.html",
@@ -303,28 +323,33 @@
     },
     {
       "path": "site/index.html",
-      "sha256": "44bfdbc78a588f5480390925b275f87ee3f6124412d0269bea20bd5b7046c494",
-      "bytes": 30212
+      "sha256": "d540f35ea96e4aa7e13f30f3e2a350d5e2fc2d3b01593eb1053c77bb74de6108",
+      "bytes": 32586
     },
     {
       "path": "site/sitemap.xml",
-      "sha256": "93f8fcd5a1c625fc00969a6b97e6396f7cf8cffe38fb5dc12de36532a3b0bf4e",
-      "bytes": 716
+      "sha256": "2a3d38bc0b182b3ea6f519328e1723fdeefdda70ef1097238bf549e9c327c751",
+      "bytes": 813
     },
     {
       "path": "site/style.css",
-      "sha256": "b370c26ab4b9b61024b2453e94f82e9595631f33b6b4ee56b77cf2d6b4beee47",
-      "bytes": 10396
+      "sha256": "18af0bcc451f762dabb840c3e7fb6f073302152ba368f41b39e37c84c7b603c1",
+      "bytes": 11900
     },
     {
       "path": "tests/behavioral-cases.md",
-      "sha256": "7cfa4c596885206c7d00bff027634956668b11bad6cac74620def28d706890f3",
-      "bytes": 2062
+      "sha256": "319342e7e2cb56cec746daeb32723a18cc89a9f0249b201fee58b1b86c43c263",
+      "bytes": 3137
     },
     {
       "path": "tests/test_evidence.py",
       "sha256": "0f81903847d233c3043ee2146faefa7a47f3a73305d75f47e825eb8901ca22b3",
       "bytes": 3763
+    },
+    {
+      "path": "tests/test_onboarding.py",
+      "sha256": "ec575fef81cddfe734590059fb1c98a7dedf71b02fb2f818ce8b81b3fd22b334",
+      "bytes": 2428
     },
     {
       "path": "tests/test_publication_security.py",
@@ -335,6 +360,11 @@
       "path": "tests/test_reader_citations.py",
       "sha256": "bb87cc9d11cb1b6e9751bb35a6174f8ffb053cb2ee47ada0e3c3585f71b4b834",
       "bytes": 3265
+    },
+    {
+      "path": "tests/v0.3-validation.md",
+      "sha256": "367916509cf13653071ca8a77f6187a8383008d72119472e8597d3562ba79ed8",
+      "bytes": 2287
     }
   ]
 }

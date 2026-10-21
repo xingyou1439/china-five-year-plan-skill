@@ -57,6 +57,8 @@ def validate():
                                (ROOT/'site/cards'/f'share-{c["id"]}.html', builder.share(c)),
                                (ROOT/'guide'/f'card-{c["id"]}.md', builder.markdown(c))]:
             if path.read_text(encoding='utf-8') != expected: errors.append(f'{path.relative_to(ROOT)}: stale generated content')
+    if (ROOT/"site/first-session.html").read_text(encoding="utf-8") != builder.walkthrough():
+        errors.append("site/first-session.html: stale generated walkthrough")
     return errors
 
 

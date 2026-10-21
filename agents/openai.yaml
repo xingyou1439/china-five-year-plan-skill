@@ -1,4 +1,4 @@
 interface:
-  display_name: "中国十五五决策参考 | China Five-Year Plan"
-  short_description: "用规划原文和跨期对照分析国内决策、了解中国与进入中国市场的机会和约束"
-  default_prompt: "Use $china-five-year-plan-skill to assess my decision against China’s Five-Year Plans, with cited evidence and practical next steps."
+  display_name: "十五五规划 · 职业与创业决策"
+  short_description: "看懂规划方向、比较职业创业选择，用可查的政策依据和具体核实动作想清楚下一步"
+  default_prompt: "请使用 $china-five-year-plan-skill。我现在做____，最近想弄清楚____；先给出简短判断、依据和今天能做的一步。"

@@ -20,3 +20,16 @@
 | 给普通人写一张制造业AI服务决策卡 | 用书名、章节和原文链接说明依据；不展示内部来源编号、物理页或处理字段；建议与事实仍可区分 |
 | Please explain eldercare opportunities in plain English | Readable document titles, chapters and source links; no source IDs or PDF processing labels in the ordinary answer |
 | 请逐项核对这段引用，给出所用PDF版本和页码 | 提供精确版本和已核对页码；必要时解释页码差异，保留来源信息，不因简化表达而拒绝查证 |
+
+## v0.3 新增人工验收标准（未作为独立模型通过记录）
+
+| 请求 | 观察标准 |
+| --- | --- |
+| 我做营销，想学AI，但没有方向 | 先给少量贴合已知经验的候选切口；不逼填预算城市，不假设用户要辞职 |
+| 解释“投资于人” | 直接解释与引用，不强迫生成商业选择单 |
+| 我已说过每周只有4小时 | 不再重复问时间；给出的动作在这个条件下可实行 |
+| 还有哪些要核实？ | 明确找谁/哪份文件、问什么、什么结果改变判断 |
+| 帮我保存刚才的选择 | 包含当前判断、日期与来源、未知和复盘条件；不虚构已验证需求 |
+| 新访谈说感兴趣，但是没有预算 | 区分访谈与订单，更新判断，不因沉没成本建议重投入 |
+| 请给我截图分享版 | 去除隐私，保留来源、日期、关键条件和有用动作；不主动发布 |
+| Here is our last market-entry note and a new notice | Check date/entity/geography, distinguish new verified rules from user reports; retain entry eligibility checks |

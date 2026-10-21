@@ -1,6 +1,6 @@
 # 十五五规划解读与职业创业决策卡
 
-基于十五五规划的职业与小生意决策参考。v0.2.1，核验日期2026-10-18。
+基于十五五规划的职业与小生意决策参考。v0.3.0，核验日期2026-10-18。
 
 先选一个与你有关的问题，读依据、付款方与验证动作，再决定是否扩大投入。以下均为构造场景；商业需求和个人适配待验证。
 
@@ -10,7 +10,7 @@
 - [十五五创业方向怎么判断：从政策支持走到客户订单](card-04.md) · [在线阅读](https://xingyou1439.github.io/china-five-year-plan-skill/cards/policy-to-order.html)
 - [十五五职业选择与技能转型：营销、设计、培训经验怎样用？](card-05.md) · [在线阅读](https://xingyou1439.github.io/china-five-year-plan-skill/cards/skills-transfer.html)
 
-[手机阅读页](https://xingyou1439.github.io/china-five-year-plan-skill/) · [短版PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/five-year-guide-v0.2.1.pdf)
+[手机阅读页](https://xingyou1439.github.io/china-five-year-plan-skill/) · [短版PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.3.0/five-year-guide-v0.3.0.pdf)
 
 ## 如何转载与改编
 

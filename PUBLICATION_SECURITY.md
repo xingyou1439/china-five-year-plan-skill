@@ -27,3 +27,7 @@ PDF与分享PNG由审核后的guide/cards.json和政策引文生成，不提交�
 Only explicitly allowlisted, reviewed project files are published. Raw research documents, internal materials, participant information, personal assignments, local source paths and credentials are excluded. Bibliographic metadata is reduced to public document identity and review coverage.
 
 Pre-publication checks combine provenance and manual review, sensitive-data scanning, a fixed file allowlist, a fresh Git history with a public no-reply identity, a content-hash manifest and verification of the remote tree and release archive. A private local denylist can supplement the scan without publishing its contents. Automated patterns cannot identify every personal name, so future changes require the same review rather than inheriting an unlimited assurance.
+
+## v0.3 新增范围
+
+白名单新增选择单模板、明确标为构造的完整使用演示及其生成网页、入门交互测试、验证范围记录与待发布文案。示例不含真实试用者；网页提问输入只在当前页面组合文字，不上传、不持久保存。原有可选两周清单仍仅存当前浏览器，支持下载和清空。个人选择单在宿主中生成，由用户自行决定保存或分享，不写入公开仓库。

@@ -14,23 +14,35 @@
 
 ## 可以这样提问
 
-> 我做了5年品牌营销，想学 AI，又不想丢掉原来的经验。结合十五五规划，我应该先了解哪些方向、补哪些能力？
+安装后，从一句话开始：**“我现在做____，最近想弄清楚____。”** 不用先填完整问卷。
 
-> 我在苏州，有企业培训经验，想给本地企业做 AI 服务。这个想法和十五五有哪些关联？在投入之前，我该找谁、问什么？
+| 你想做什么 | 可以直接发给助手的话 |
+| --- | --- |
+| 看懂一个方向 | 请使用 china-five-year-plan-skill。十五五和十四五相比，养老服务的重点有哪些变化？请解释并给出原文链接。 |
+| 比较两个选择 | 请使用 china-five-year-plan-skill。我做了5年品牌营销，想学AI。先提高现有工作效率，还是试着做新服务？ |
+| 安排下一步 | 请使用 china-five-year-plan-skill。我有企业培训经验，想试本地制造企业的AI服务。投入前今天先找谁、问什么？ |
 
-> 十五五和十四五相比，对养老服务的重点有哪些变化？请用容易理解的话解释，并给出原文链接。
+没有选项，也可以先探索。只有会改变判断的信息才需要补问，例如具体项目的城市、能力或投入；只解释一个词，不要求预算。也支持英文，适用于了解中国与市场进入研究。
 
-提问时带上**你在哪里、已经会什么、正在比较什么、能投入多少时间和预算**，分析会更贴近你的情况。也支持英文提问，适用于海外用户了解中国和研究市场进入条件。
+[网页里填写并复制提问](https://xingyou1439.github.io/china-five-year-plan-skill/#start) · [看一次完整演示](https://xingyou1439.github.io/china-five-year-plan-skill/first-session.html)
 
 ## 回答会给你什么？
 
-先给出对你问题的判断，再说明依据和适用条件，最后列出需要补查的信息与行动建议。引用用文件名称、章节和原文链接表达，方便继续阅读。
+先给一屏左右的回答：**当前判断、相关依据、最该查清的事、今天能做的一步**。复杂条件会保留，需要时再展开。解释类问题先把概念说清楚；决策类问题把政策、真实需求、个人能力和准入条件分开看。
 
-规划能帮助判断方向；具体岗位、客户需求、收入和经营条件，还要结合现实信息核实。证据不足时会直接说明。
+例如，“做了5年品牌营销，想学AI”会先比较怎样沿用已有能力，再给一个可评估的小任务；不会从政策支持直接推导出新收入。[完整演示](examples/first-session.md)包括一句输入、必要追问、政策引用、选项比较、本周行动与后续复盘，明确标为构造示范。
+
+### 用完可以带走什么？
+
+在助手里说：**“请把刚才的分析整理成我的职业与创业选择单。”** 可以保存选项、当前判断、来源、最大未知、核实动作和复盘条件。[查看选择单模板](references/decision-note.md)。
+
+下次贴回选择单，加上“新了解到____，请重新判断”，就能继续分析。跨对话需要自己带回记录。
+
+想分享时再说：**“请精简为适合截图的分享版，删去个人条件和商业细节，保留来源、关键不确定性和一个动作。”** 请自行复核隐私后决定是否发布。网站提供提问模板；分析和选择单由已安装 Skill 的助手生成。
 
 ## 安装与使用
 
-[下载 v0.2.1 安装包](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/china-five-year-plan-skill-v0.2.1.zip) · [查看版本](https://github.com/xingyou1439/china-five-year-plan-skill/releases)
+[下载 v0.3.0 安装包](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.3.0/china-five-year-plan-skill-v0.3.0.zip) · [查看版本](https://github.com/xingyou1439/china-five-year-plan-skill/releases)
 
 ### WorkBuddy
 
@@ -38,7 +50,7 @@
 
 ```text
 请下载这个 Skill 安装包到本机，告诉我保存位置，保留 ZIP 不解压：
-https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/china-five-year-plan-skill-v0.2.1.zip
+https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.3.0/china-five-year-plan-skill-v0.3.0.zip
 ```
 
 然后点击 **专家·技能·连接器 → 技能 → 添加技能 → 上传技能**，选择下载的 ZIP。在“已安装”中搜索 `china-five-year-plan-skill`，确认已启用，再新建对话使用。也可直接点击上方下载链接。[WorkBuddy 官方说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)：自定义包需上传导入，对话一键安装目前仅适用于技能市场中的技能。
@@ -49,7 +61,7 @@ https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2
 
 ```text
 $skill-installer 请安装 GitHub 仓库 https://github.com/xingyou1439/china-five-year-plan-skill
-版本 ref：v0.2.1；仓库内路径：.；安装名称：china-five-year-plan-skill。
+版本 ref：v0.3.0；仓库内路径：.；安装名称：china-five-year-plan-skill。
 请安装完整目录，检查 SKILL.md 和 references/ 是否齐全；如已存在，请先检查，不要覆盖。
 ```
 
@@ -60,14 +72,14 @@ $skill-installer 请安装 GitHub 仓库 https://github.com/xingyou1439/china-fi
 复制到本机 Claude Code 对话框：
 
 ```text
-请将 https://github.com/xingyou1439/china-five-year-plan-skill 的 v0.2.1 版本完整安装到
+请将 https://github.com/xingyou1439/china-five-year-plan-skill 的 v0.3.0 版本完整安装到
 ~/.claude/skills/china-five-year-plan-skill，保留所有文件的相对位置。
 如目标目录已存在，请先检查，不要覆盖。完成后检查 SKILL.md 和 references/ 是否齐全。
 ```
 
 安装后输入 `/china-five-year-plan-skill` 调用。个人技能目录见 [Claude Code 官方说明](https://code.claude.com/docs/en/skills#choose-where-skills-load)。
 
-v0.1.0曾验证 Codex 官方安装器下载、完整安装及证据检索。v0.2.1本次完成发布包完整性与本地证据检索检查；客户端安装状态以对应实测记录为准。WorkBuddy 实际导入、Claude Code 客户端调用尚未完成实测。安装时应保留完整文件夹，不能只复制 `SKILL.md`。
+建议先用 Codex；安装后发一句“请使用 china-five-year-plan-skill；如果未找到请明确说明”，并检查回答能否给出实际读取的来源。v0.1.0曾验证 Codex 官方安装器的完整安装与证据检索；v0.3.0的包校验与复制安装后的检索记录见[验证说明](tests/v0.3-validation.md)。本次没有完成新会话自动发现和独立模型行为测试；WorkBuddy 导入、Claude Code 调用也未实测。安装时保留完整文件夹，不能只复制 `SKILL.md`。
 
 ### 安装后怎么用
 
@@ -88,7 +100,7 @@ and what an overseas technology supplier should verify before market entry.
 
 ## 想先阅读，再决定是否安装？
 
-[在线了解与阅读](https://xingyou1439.github.io/china-five-year-plan-skill/) · [下载短版 PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.2.1/five-year-guide-v0.2.1.pdf) · [专题参考资料](guide/README.md)
+[在线了解与阅读](https://xingyou1439.github.io/china-five-year-plan-skill/) · [下载短版 PDF](https://github.com/xingyou1439/china-five-year-plan-skill/releases/download/v0.3.0/five-year-guide-v0.3.0.pdf) · [专题参考资料](guide/README.md)
 
 阅读材料用5个假设案例演示分析方法，适合先了解内容；个性化分析需要安装 Skill，并带入自己的情况。PDF 是本项目的短版指南，官方规划全文请看[《十五五规划纲要》](https://www.bjrd.gov.cn/zyfb/zt/14jqgrd04chybjdbthdztbd/wjbg/202603/t20260314_4557219.html)。
 
@@ -144,7 +156,7 @@ PDF和分享二维码的重建另需ReportLab，以及支持中文的TrueType字
 
 ```sh
 python3 scripts/build_qr.py
-python3 scripts/build_pdf.py --output ../guide-output/five-year-guide-v0.2.1.pdf --font /path/to/cjk-font.ttf
+python3 scripts/build_pdf.py --output ../guide-output/five-year-guide-v0.3.0.pdf --font /path/to/cjk-font.ttf
 ```
 
 [发布文案与两周验证流程](launch/launch-kit.md) · [20个问题与进度](launch/question-backlog.md) · [匿名试用记录模板](launch/reader-test-template.csv)
@@ -159,4 +171,4 @@ python3 scripts/build_pdf.py --output ../guide-output/five-year-guide-v0.2.1.pdf
 
 ## 状态
 
-`v0.2.1`。这是独立的政策参考工具，新增公众指南与阅读页；尚未提交技能市场，未声称获得官方背书、完成所有宿主实测或验证商业效果。
+`v0.3.0`。本版增加三个提问入口、简短首问、选择单与复盘、完整使用演示；尚未提交技能市场，未声称获得官方背书、完成所有宿主实测或验证商业效果。

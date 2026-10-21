@@ -110,5 +110,29 @@
     const a = document.createElement('a'); a.href = url; a.download = '我的两周验证清单.md'; a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
+  const contextInput = document.getElementById('ask-context');
+  const questionInput = document.getElementById('ask-question');
+  if (contextInput && questionInput) {
+    let intent = 'understand';
+    const modes = {
+      understand: ['只想了解政策？直接填问题，不需要职业、城市和预算。', '请先用容易理解的话解释，给出实际读取的政策依据、适用范围，以及一个继续了解的方向。'],
+      compare: ['写出正在犹豫的选择；还没有选项，也可以让助手先帮你缩小方向。', '请比较我的现实选项；若尚无选项，先根据我已说明的经验帮我缩小方向。先给简短判断、一两条政策依据、最大未知和今天的一步。'],
+      act: ['说出已有方向和卡住的地方；需要时间或预算时，助手再补问。', '请从我已说明的方向出发，先给简短判断、政策依据、最该核实的一件事，以及今天能做的一步。说明找谁、问什么、什么结果会改变判断。']
+    };
+    function updatePrompt() {
+      const context = contextInput.value.trim(), question = questionInput.value.trim() || '____';
+      document.getElementById('prompt-start').textContent = '请使用 china-five-year-plan-skill。' + (context ? '我现在' + context + '。' : '') + '我最近想弄清楚' + question + '。\n' + modes[intent][1] + '\n只追问会改变答案的信息。如果该 Skill 尚未安装，请直接说明。';
+      document.getElementById('intent-help').textContent = modes[intent][0];
+    }
+    document.querySelectorAll('[data-intent]').forEach(button => button.addEventListener('click', () => {
+      if (!Object.hasOwn(modes, button.dataset.intent)) return;
+      intent = button.dataset.intent;
+      document.querySelectorAll('[data-intent]').forEach(el => el.setAttribute('aria-pressed', String(el === button)));
+      updatePrompt();
+    }));
+    contextInput.addEventListener('input', updatePrompt);
+    questionInput.addEventListener('input', updatePrompt);
+    updatePrompt();
+  }
   sync();
 })();
